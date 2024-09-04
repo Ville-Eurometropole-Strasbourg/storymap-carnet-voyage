@@ -3,12 +3,14 @@ maplibregl.addProtocol("pmtiles", protocol.tile);
 
 let map = new maplibregl.Map({
   container: "map",
-  zoom: 17,
-  center: [7.7345, 48.58496],
+  center: [7.73394, 48.5853],
   hash: true,
   pitchWithRotate: true,
   style: "teritorio_tourism.json",
   antialias: true,
+  zoom: 17,
+  bearing: 27,
+  pitch: 45
 });
 
 map.on("load", function () {
