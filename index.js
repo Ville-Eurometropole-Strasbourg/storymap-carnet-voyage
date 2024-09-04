@@ -125,11 +125,11 @@ map.on("style.load", () => {
 let animation;
 
 function rotateCamera(timestamp) {
-    // clamp the rotation between 0 -360 degrees
-    // Divide timestamp by 100 to slow rotation to ~10 degrees / sec
-    map.rotateTo((timestamp / 100) % 360, {duration: 0});
-    // Request the next frame of the animation.
-    animation = requestAnimationFrame(rotateCamera);
+  // clamp the rotation between 0 -360 degrees
+  // Divide timestamp by 100 to slow rotation to ~10 degrees / sec
+  map.rotateTo((timestamp / 100) % 360, { duration: 0 });
+  // Request the next frame of the animation.
+  animation = requestAnimationFrame(rotateCamera);
 }
 
 
@@ -145,59 +145,60 @@ const chapters = {};
 function createSectionsFromGeoJSON(geojson) {
   const featuresContainer = document.getElementById('features');
   geojson.features.forEach((feature, index) => {
-      const element = document.createElement('div');
-      element.classList.add('element');
-      const section = document.createElement('section');
-      section.id = feature.properties.id_etape;
-      section.classList.add("_" + feature.properties.id_etape);
+    const element = document.createElement('div');
+    element.classList.add('element');
+    const section = document.createElement('section');
+    section.id = feature.properties.id_etape;
+    section.classList.add("_" + feature.properties.id_etape);
 
-      const title = document.createElement('h3');
-      title.textContent = feature.properties.titre_etape;
+    const title = document.createElement('h3');
+    title.textContent = feature.properties.titre_etape;
 
-      const description = document.createElement('p');
-      description.textContent = feature.properties.description || 'No description available.';
+    const description = document.createElement('p');
+    description.textContent = feature.properties.description || 'No description available.';
 
-      element.appendChild(section);
-      section.appendChild(title);
-      section.appendChild(description);
-      featuresContainer.appendChild(element);
+    element.appendChild(section);
+    section.appendChild(title);
+    section.appendChild(description);
+    featuresContainer.appendChild(element);
 
-      ScrollTrigger.create({
-          markers: true,
-          trigger: '._' + feature.properties.id_etape,
-          start: 'top 50%',
-          endTrigger: '._' + feature.properties.id_etape,
-          end: 'bottom 60%',
-          onToggle: (self) => flyToChapter(feature.properties.id_etape)
-      });
+    if (index != 0) {
+      const el = document.createElement('div');
+      el.className = 'marker';
+      el.style.backgroundImage = `url(` + feature.properties.image + `)`;
+      el.style.width = `60px`;
+      el.style.height = `60px`;
+      el.style.visibility = `visible`;
+      const marker = new maplibregl.Marker({ element: el })
+        .setLngLat(feature.geometry.coordinates)
+        .addTo(map);
+    }
 
-      chapters[feature.properties.id_etape] = {
-          center: feature.geometry.coordinates,
-          zoom: feature.properties.zoom,
-          pitch: feature.properties.inclinaison,
-          bearing: feature.properties.orientation
-      };
+    ScrollTrigger.create({
+      markers: true,
+      trigger: '._' + feature.properties.id_etape,
+      start: 'top 50%',
+      endTrigger: '._' + feature.properties.id_etape,
+      end: 'bottom 60%',
+      onToggle: (self) => flyToChapter(feature.properties.id_etape)
+    });
 
-      if (index != 0) {
-          const el = document.createElement('div');
-          el.className = 'marker';
-          el.style.backgroundImage = `url(https://picsum.photos/60/60/)`;
-          el.style.width = `60px`;
-          el.style.height = `60px`;
-          const marker = new maplibregl.Marker({element: el})
-                  .setLngLat(feature.geometry.coordinates)
-                  .addTo(map);
-      }
+    chapters[feature.properties.id_etape] = {
+      center: feature.geometry.coordinates,
+      zoom: feature.properties.zoom,
+      pitch: feature.properties.inclinaison,
+      bearing: feature.properties.orientation
+    };
   });
 }
 
 async function fetchGeoJSON() {
   try {
-      const response = await fetch('recit.geojson');
-      const geojson = await response.json();
-      createSectionsFromGeoJSON(geojson);
+    const response = await fetch('recit.geojson');
+    const geojson = await response.json();
+    createSectionsFromGeoJSON(geojson);
   } catch (error) {
-      console.error('Error fetching the GeoJSON file:', error);
+    console.error('Error fetching the GeoJSON file:', error);
   }
 }
 
@@ -207,9 +208,9 @@ fetchGeoJSON();
 ScrollTrigger.refresh(true);
 
 function flyToChapter(chapterName) {
-    if (chapterName != '0') {
-        // desactivation rotation 360 depart
-        cancelAnimationFrame(animation);
-    }
-    map.flyTo(chapters[chapterName]);
+  if (chapterName != '0') {
+    // desactivation rotation 360 depart
+    cancelAnimationFrame(animation);
+  }
+  map.flyTo(chapters[chapterName]);
 }
