@@ -16,7 +16,6 @@ let map = new maplibregl.Map({
 map.on("load", function () {
   map.addControl(new maplibregl.NavigationControl());
   map.addControl(new maplibregl.ScaleControl({ unit: "metric" }));
-  map.addControl(new maplibregl.FullscreenControl());
 });
 
 // parameters to ensure the model is georeferenced correctly on the map
