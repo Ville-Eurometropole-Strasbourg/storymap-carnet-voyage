@@ -138,74 +138,79 @@ function rotateCamera(timestamp) {
 rotateCamera(0);
 // --
 
+// -- scroll chapitres
+gsap.registerPlugin(ScrollTrigger);
+
 const chapters = {};
 
 function createSectionsFromGeoJSON(geojson) {
   const featuresContainer = document.getElementById('features');
   geojson.features.forEach((feature, index) => {
-    const section = document.createElement('section');
-    section.id = feature.properties.id_etape;
-    if (index === 0) {
-      section.classList.add('active');
-    }
+      const element = document.createElement('div');
+      element.classList.add('element');
+      const section = document.createElement('section');
+      section.id = feature.properties.id_etape;
+      section.classList.add(feature.properties.id_etape);
 
-    const title = document.createElement('h3');
-    title.textContent = feature.properties.titre_etape;
+      const title = document.createElement('h3');
+      title.textContent = feature.properties.titre_etape;
 
-    const description = document.createElement('p');
-    description.textContent = feature.properties.description || 'No description available.';
+      const description = document.createElement('p');
+      description.textContent = feature.properties.description || desc_gare || 'No description available.';
 
-    section.appendChild(title);
-    section.appendChild(description);
-    featuresContainer.appendChild(section);
+      element.appendChild(section);
+      section.appendChild(title);
+      section.appendChild(description);
+      featuresContainer.appendChild(element);
 
-    chapters[feature.properties.id_etape] = {
-      center: feature.geometry.coordinates,
-      zoom: feature.properties.zoom,
-      pitch: feature.properties.inclinaison,
-      bearing: feature.properties.orientation
-    };
+      ScrollTrigger.create({
+          markers: true,
+          trigger: '.' + feature.properties.id_etape,
+          start: 'top 50%',
+          endTrigger: '.' + feature.properties.id_etape,
+          end: 'bottom 60%',
+          onToggle: (self) => flyToChapter(feature.properties.id_etape)
+      });
+
+      chapters[feature.properties.id_etape] = {
+          center: feature.geometry.coordinates,
+          zoom: feature.properties.zoom,
+          pitch: feature.properties.inclinaison,
+          bearing: feature.properties.orientation
+      };
+
+      if (index != 0) {
+          const el = document.createElement('div');
+          el.className = 'marker';
+          el.style.backgroundImage = `url(https://picsum.photos/60/60/)`;
+          el.style.width = `60px`;
+          el.style.height = `60px`;
+          const marker = new maplibregl.Marker({element: el})
+                  .setLngLat(feature.geometry.coordinates)
+                  .addTo(map);
+      }
   });
 }
 
 async function fetchGeoJSON() {
   try {
-    const response = await fetch('recit.geojson');
-    const geojson = await response.json();
-    createSectionsFromGeoJSON(geojson);
-
-    // Set up scroll event listener
-    window.onscroll = function () {
-      const chapterNames = Object.keys(chapters);
-      for (let i = 0; i < chapterNames.length; i++) {
-        const chapterName = chapterNames[i];
-        if (isElementOnScreen(chapterName)) {
-          setActiveChapter(chapterName);
-          break;
-        }
-      }
-    };
-
-    let activeChapterName = geojson.features[0].properties.id_etape;
-    function setActiveChapter(chapterName) {
-      if (chapterName === activeChapterName) return;
-
-      map.flyTo(chapters[chapterName]);
-
-      document.getElementById(chapterName).classList.add('active');
-      document.getElementById(activeChapterName).classList.remove('active');
-
-      activeChapterName = chapterName;
-    }
-
-    function isElementOnScreen(id) {
-      const element = document.getElementById(id);
-      const bounds = element.getBoundingClientRect();
-      return bounds.top < window.innerHeight && bounds.bottom > 0;
-    }
+      const response = await fetch('recit.geojson');
+      const geojson = await response.json();
+      createSectionsFromGeoJSON(geojson);
   } catch (error) {
-    console.error('Error fetching the GeoJSON file:', error);
+      console.error('Error fetching the GeoJSON file:', error);
   }
 }
 
 fetchGeoJSON();
+
+// une fois les sections creees, on ajuste la position des triggers
+ScrollTrigger.refresh(true);
+
+function flyToChapter(chapterName) {
+    if (chapterName != 'gare_de_strasbourg') {
+        // desactivation rotation 360 depart
+        cancelAnimationFrame(animation);
+    }
+    map.flyTo(chapters[chapterName]);
+}
