@@ -150,13 +150,13 @@ function createSectionsFromGeoJSON(geojson) {
       element.classList.add('element');
       const section = document.createElement('section');
       section.id = feature.properties.id_etape;
-      section.classList.add(feature.properties.id_etape);
+      section.classList.add("_" + feature.properties.id_etape);
 
       const title = document.createElement('h3');
       title.textContent = feature.properties.titre_etape;
 
       const description = document.createElement('p');
-      description.textContent = feature.properties.description || desc_gare || 'No description available.';
+      description.textContent = feature.properties.description || 'No description available.';
 
       element.appendChild(section);
       section.appendChild(title);
@@ -165,9 +165,9 @@ function createSectionsFromGeoJSON(geojson) {
 
       ScrollTrigger.create({
           markers: true,
-          trigger: '.' + feature.properties.id_etape,
+          trigger: '._' + feature.properties.id_etape,
           start: 'top 50%',
-          endTrigger: '.' + feature.properties.id_etape,
+          endTrigger: '._' + feature.properties.id_etape,
           end: 'bottom 60%',
           onToggle: (self) => flyToChapter(feature.properties.id_etape)
       });
@@ -208,7 +208,7 @@ fetchGeoJSON();
 ScrollTrigger.refresh(true);
 
 function flyToChapter(chapterName) {
-    if (chapterName != 'gare_de_strasbourg') {
+    if (chapterName != '0') {
         // desactivation rotation 360 depart
         cancelAnimationFrame(animation);
     }
