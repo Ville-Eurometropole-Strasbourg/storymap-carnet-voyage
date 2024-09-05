@@ -4,7 +4,7 @@ maplibregl.addProtocol("pmtiles", protocol.tile);
 let map = new maplibregl.Map({
   container: "map",
   center: [7.73394, 48.5853],
-  hash: true,
+  // hash: true,
   pitchWithRotate: true,
   style: "teritorio_tourism.json",
   antialias: true,
