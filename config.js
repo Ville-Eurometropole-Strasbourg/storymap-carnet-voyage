@@ -341,8 +341,18 @@ var config = {
                 pitch: 20,
                 bearing: 45
             },
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+                {
+                    layer: '19_Gare',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: '19_Gare',
+                    opacity: 0
+                }
+            ]
         }
     ]
 };
