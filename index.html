@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html>
 <head>
-  <title>Voyage de Strasbourg à Saint-Dié-des-Vosges le long de la Bruche</title>
-  <meta property="og:description"
-    content="Faites défiler l'histoire vers le bas et la carte montrera l'emplacement du chapitre." />
-  <meta charset='utf-8'>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="vendor/maplibre-gl.3.6.2.js"></script>
-  <link href="vendor/maplibre-gl.3.6.2.css" rel="stylesheet" />
-  <script src="vendor/pmtiles.2.11.0.js"></script>
-  <script src="vendor/three.0.147.0.js"></script>
-  <script src="vendor/three-gltfloader.0.147.0.js"></script>
-  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js'></script>
-
-  <link href="style.css" rel="stylesheet" />
+    <meta charset='utf-8' />
+    <title>Préserver les ressources et les paysages</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src="vendor/pmtiles.2.11.0.js"></script>
+    <script src="vendor/maplibre-gl.3.6.2.js"></script>
+    <link href="vendor/maplibre-gl.3.6.2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="assets/intersection-observer.0.5.1.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="vendor/scrollama.3.2.0.js"></script>
 </head>
 
 <body>
-  <div id="map"></div>
-  <div id="features"></div>
-  <script src="index.js"></script>
+    <div id='map'></div>
+    <div id='story'></div>
+    <script src='config.js'></script>
+    <script type='text/javascript' src="map.js"></script>
 </body>
 
 </html>
