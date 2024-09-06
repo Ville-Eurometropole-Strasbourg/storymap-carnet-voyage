@@ -67,6 +67,11 @@
       "type": "geojson",
       "data": "assets/18_PVD.geojson"
     }
+    ,
+    "19_Gare": {
+      "type": "geojson",
+      "data": "assets/19_Gare.geojson"
+    }
   },
   "sprite": "https://vecto.teritorio.xyz/styles/teritorio-tourism-latest/sprite",
   "glyphs": "https://vecto.teritorio.xyz/fonts/{fontstack}/{range}.pbf",
@@ -685,6 +690,18 @@
       "id": "08_Locomotive",
       "type": "fill-extrusion",
       "source": "08_Locomotive",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "hsl(35, 8%, 85%)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "19_Gare",
+      "type": "fill-extrusion",
+      "source": "19_Gare",
       "minzoom": 14,
       "paint": {
         "fill-extrusion-color": "hsl(35, 8%, 85%)",
