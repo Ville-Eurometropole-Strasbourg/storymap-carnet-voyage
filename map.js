@@ -33,7 +33,7 @@ function getLayerPaintType(layer) {
 function setLayerOpacity(layer) {
   var paintProps = getLayerPaintType(layer.layer);
   paintProps.forEach(function (prop) {
-      map.setPaintProperty(layer.layer, prop, layer.opacity);
+    map.setPaintProperty(layer.layer, prop, layer.opacity);
   });
 }
 
@@ -90,36 +90,37 @@ config.chapters.forEach((record, idx) => {
   element will go in the container element */
   var container = document.createElement('div');
   var chapter = document.createElement('div');
+  chapter.id = "etape-" + record.id
   // Creates the title for the vignettes
   if (record.title) {
-      var title = document.createElement('h3');
-      title.innerText = record.title;
-      chapter.appendChild(title);
+    var title = document.createElement('h3');
+    title.innerText = record.title;
+    chapter.appendChild(title);
   }
   // Creates the image for the vignette
   if (record.image) {
-      var image = new Image();
-      image.src = record.image;
-      chapter.appendChild(image);
+    var image = new Image();
+    image.src = record.image;
+    chapter.appendChild(image);
   }
   // Creates the image credit for the vignette
   if (record.imageCredit) {
-      var imageCredit = document.createElement('p');
-      imageCredit.classList.add('imageCredit');
-      imageCredit.innerHTML = 'Crédit: ' + record.imageCredit;
-      chapter.appendChild(imageCredit);
+    var imageCredit = document.createElement('p');
+    imageCredit.classList.add('imageCredit');
+    imageCredit.innerHTML = 'Crédit: ' + record.imageCredit;
+    chapter.appendChild(imageCredit);
   }
   // Creates the description for the vignette
   if (record.description) {
-      var story = document.createElement('p');
-      story.innerHTML = record.description;
-      chapter.appendChild(story);
+    var story = document.createElement('p');
+    story.innerHTML = record.description;
+    chapter.appendChild(story);
   }
   // Sets the id for the vignette and adds the step css attribute
   container.setAttribute('id', record.id);
   container.classList.add('step');
   if (idx === 0) {
-      container.classList.add('active');
+    container.classList.add('active');
   }
   // Sets the overall theme to the chapter element
   chapter.classList.add(config.theme);
@@ -157,7 +158,7 @@ const transformRequest = (url) => {
   const hasQuery = url.indexOf("?") !== -1;
   const suffix = hasQuery ? "&pluginName=journalismScrollytelling" : "?pluginName=journalismScrollytelling";
   return {
-      url: url + suffix
+    url: url + suffix
   }
 }
 
@@ -186,29 +187,29 @@ while changing the zoom level, pitch and bearing */
 map.on("load", function () {
   // Setup the instance, pass callback functions
   scroller
-      .setup({
-          step: '.step',
-          offset: 0.5,
-          progress: true
-      })
-      .onStepEnter(response => {
-          var chapter = config.chapters.find(chap => chap.id === response.element.id);
-          response.element.classList.add('active');
-          map.flyTo(chapter.location);
-          if (config.showMarkers) {
-              marker.setLngLat(chapter.location.center);
-          }
-          if (chapter.onChapterEnter.length > 0) {
-              chapter.onChapterEnter.forEach(setLayerOpacity);
-          }
-      })
-      .onStepExit(response => {
-          var chapter = config.chapters.find(chap => chap.id === response.element.id);
-          response.element.classList.remove('active');
-          if (chapter.onChapterExit.length > 0) {
-              chapter.onChapterExit.forEach(setLayerOpacity);
-          }
-      });
+    .setup({
+      step: '.step',
+      offset: 0.5,
+      progress: true
+    })
+    .onStepEnter(response => {
+      var chapter = config.chapters.find(chap => chap.id === response.element.id);
+      response.element.classList.add('active');
+      map.flyTo(chapter.location);
+      if (config.showMarkers) {
+        marker.setLngLat(chapter.location.center);
+      }
+      if (chapter.onChapterEnter.length > 0) {
+        chapter.onChapterEnter.forEach(setLayerOpacity);
+      }
+    })
+    .onStepExit(response => {
+      var chapter = config.chapters.find(chap => chap.id === response.element.id);
+      response.element.classList.remove('active');
+      if (chapter.onChapterExit.length > 0) {
+        chapter.onChapterExit.forEach(setLayerOpacity);
+      }
+    });
 });
 
 /* Here we watch for any resizing of the screen to
