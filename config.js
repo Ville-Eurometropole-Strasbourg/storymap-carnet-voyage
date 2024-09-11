@@ -235,7 +235,7 @@ var config = {
         {
             id: '13',
             title: 'Des plans climat',
-            image: 'images/13_Eoliennes.jpg',
+            image: 'images/13_Eoliennes.svg',
             imageCredit: '<a href="https://www.adeus.org/">ADEUS</a>',
             description: 'Les parcs éoliens qui composent le paysage vosgien témoignent de l’engagement des collectivités du territoire dans le domaine de la transition énergétique. Depuis les années 1990, la Communauté de communes de la Vallée de la Bruche s’engage ainsi dans une démarche paysagère prônant notamment la préservation de la forêt et la valorisation du bois-énergie. Adopté en 2022 par le PETR Bruche Mossig, le Plan climat s’appuie également sur le développement de nouvelles sources d’énergie verte, telles que le photovoltaïque ou le biogaz. Depuis 2015, la Communauté d’agglomération de Saint-Dié-des-Vosges dispose, avec les autres intercommunalités du PETR de la Déodatie, d’une Maison de l’Habitat et de l’Energie, qui vise à accompagner les particuliers, les entreprises, les hébergeurs et les collectivités dans les projets de rénovation énergétique et d’amélioration du bâti. En 2023, la Communauté d’agglomération a également amorcé une démarche d’élaboration d’un Plan climat pour 2026-2031.',
             location: {
@@ -260,7 +260,7 @@ var config = {
         {
             id: '14',
             title: 'Le lac de Pierre-Percée, un paysage naturel exceptionnel',
-            image: 'images/14_PierrePercee.jpg',
+            image: 'images/14_PierrePercee.svg',
             imageCredit: '<a href="https://www.adeus.org/">ADEUS</a>',
             description: 'Avec sa forme en feuille d’érable et ses forêts bordées d’eau, le lac de Pierre-Percée, qui s’étend sur plus de 300 hectares, est surnommé « le petit Canada lorrain ». Afin de valoriser ce paysage naturel exceptionnel, la communauté d’agglomération de Saint-Dié-des-Vosges s’est engagée avec le PETR du Pays du Lunévillois dans une campagne publicitaire de promotion et de communication en 2023. Depuis 2018, elle met également en œuvre une démarche de préservation des ruines de château de Pierre-Percée, qui offre une vue imprenable sur le lac.',
             location: {
@@ -290,8 +290,8 @@ var config = {
         {
             id: '16',
             title: 'Les abbayes des Vosges',
-            //image: 'images/15_PAT.jpg',
-            //imageCredit: '<a href="https://www.adeus.org/">ADEUS</a>',
+            image: 'images/16_Abbayes.jpg',
+            imageCredit: '<a href="https://www.adeus.org/">ADEUS</a>',
             description: 'Fondées au VII e siècle, les abbayes d’Etival, Moyenmoutier et Senones formaient, avec la cathédrale de Saint-Dié-des-Vosges et l’abbaye aujourd’hui disparue de Bonmoutier, la Sainte-Croix-des-Vosges. Au fil des siècles, elles constituent des lieux de culte, mais aussi d’enseignement, avec l’école de grammaire de Moyenmoutier, et d’activité économique, avec les usines textiles implantées sur le site de l’abbaye de Senones au 19e siècle. Aujourd’hui, cet ensemble religieux et historique s’impose encore dans le paysage, et constitue un attrait touristique et culturel important, entre randonnées, visites guidées et concerts de musique classique, avec le Festival des Abbayes en Lorraine qui fête cette année ses 20 ans.',
             location: {
                 center: [6.92179, 48.38175],
@@ -320,7 +320,7 @@ var config = {
         {
             id: '18',
             title: 'Petites villes de demain',
-            image: 'images/18_PVD.jpg',
+            image: 'images/07_PVD.jpg',
             imageCredit: '<a href="https://www.adeus.org/">ADEUS</a>',
             description: 'En octobre 2021, trois communes de la Communauté d’agglomération de Saint-Dié-des-Vosges ont adhéré au programme Petites villes de demain : Raon-l’Etape, Fraize et Plainfaing. L’objectif de ce programme est de développer l’attractivité des bourgs-centre et d’améliorer la qualité de vie des habitants. Pendant 10 ans, les communes signataires bénéficient d’une aide financière et technique de l’Etat pour élaborer un projet de territoire visant à apporter un nouveau dynamisme sur le plan économique, social et culturel, et cela dans un souci de revalorisation de l’habitat, de respect du patrimoine et de transition écologique.',
             location: {
