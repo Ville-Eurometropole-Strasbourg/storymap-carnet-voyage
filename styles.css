@@ -20,7 +20,10 @@ body {
 #header {
   margin: auto;
   min-height: 100vh;
-  padding: 2vh 2vh 5vh 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #features {
@@ -47,7 +50,6 @@ body {
   text-transform: uppercase;
   font-family: 'Merriweather', serif;
   text-align: left;
-  margin: auto;
   max-width: 600px;
 }
 
@@ -71,9 +73,8 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   text-align: left;
-  font-size: 1.2em;
-  max-width: 600px;
-  margin: 1em auto 1em auto;
+  font-size: 1.3em;
+  max-width: 50%;
 }
 
 #features h3 {
