@@ -123,31 +123,6 @@ var config = {
             onChapterExit: []
         },
         {
-            id: '7',
-            title: 'Petites villes de demain',
-            image: 'images/07_PVD.jpg',
-            imageCredit: '<a href="https://www.adeus.org/">ADEUS</a>',
-            description: 'Depuis 2021, quatre localités de la Communauté de communes de la Vallée de la Bruche ont adhéré au programme Petites villes de demain : Schirmeck, la Broque, Barembach et Rothau. L’objectif de ce programme est de développer l’attractivité des bourgs-centre et d’améliorer la qualité de vie des habitants. Pendant 10 ans, les communes signataires bénéficient d’une aide financière et technique de l’Etat pour élaborer un projet de territoire visant à apporter un nouveau dynamisme sur le plan économique, social et culturel, et cela dans un souci de revalorisation de l’habitat, de respect du patrimoine et de transition écologique.',
-            location: {
-                center: [7.21092, 48.46885],
-                zoom: 11,
-                pitch: 0,
-                bearing: 0
-            },
-            onChapterEnter: [
-                {
-                    layer: '07_PVD',
-                    opacity: 1
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: '07_PVD',
-                    opacity: 0
-                }
-            ]
-        },
-        {
             id: '8',
             title: 'La médiathèque de Wisches, la réhabilitation d’une ancienne gare',
             image: 'images/08_Locomotive.jpg',
@@ -168,6 +143,31 @@ var config = {
             onChapterExit: [
                 {
                     layer: '08_Locomotive',
+                    opacity: 0
+                }
+            ]
+        },
+        {
+            id: '7',
+            title: 'Petites villes de demain',
+            image: 'images/07_PVD.jpg',
+            imageCredit: '<a href="https://www.adeus.org/">ADEUS</a>',
+            description: 'Depuis 2021, quatre localités de la Communauté de communes de la Vallée de la Bruche ont adhéré au programme Petites villes de demain : Schirmeck, la Broque, Barembach et Rothau. L’objectif de ce programme est de développer l’attractivité des bourgs-centre et d’améliorer la qualité de vie des habitants. Pendant 10 ans, les communes signataires bénéficient d’une aide financière et technique de l’Etat pour élaborer un projet de territoire visant à apporter un nouveau dynamisme sur le plan économique, social et culturel, et cela dans un souci de revalorisation de l’habitat, de respect du patrimoine et de transition écologique.',
+            location: {
+                center: [7.21092, 48.46885],
+                zoom: 11,
+                pitch: 0,
+                bearing: 0
+            },
+            onChapterEnter: [
+                {
+                    layer: '07_PVD',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: '07_PVD',
                     opacity: 0
                 }
             ]
