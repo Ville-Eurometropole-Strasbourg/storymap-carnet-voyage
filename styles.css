@@ -6,7 +6,8 @@ body {
 #story {
   position: absolute;
   width: 100%;
-  height: 0%;  /*when activated, the map can be moved*/
+  height: 0%;
+  /*when activated, the map can be moved*/
 }
 
 #map {
@@ -153,4 +154,55 @@ a:visited {
 
 .step img {
   width: 100%;
+}
+
+.arrow-down {
+  width: 60px;
+  height: 40px;
+  margin: 80px;
+  position: relative;
+  animation: arrow 1s 2s infinite ease-out alternate;
+}
+
+.general-arrow {
+  position: absolute;
+  height: 10px;
+  width: 40px;
+  background: black;
+  top: 10px;
+  left: 10px;
+  border-radius: 4px;
+  transform-origin: 5px 50%;
+}
+
+.left-arrow {
+  transform: rotate(240deg);
+  animation: leftArrow 1s 2s infinite ease-out alternate;
+}
+
+.right-arrow {
+  transform: rotate(-60deg);
+  animation: rightArrow 1s 2s infinite ease-out alternate;
+}
+
+@keyframes arrow {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: 40px;
+  }
+}
+
+@keyframes leftArrow {
+  100% {
+    transform: rotate(225deg);
+  }
+}
+
+@keyframes rightArrow {
+  100% {
+    transform: rotate(-45deg);
+  }
 }
