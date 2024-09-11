@@ -176,6 +176,11 @@ var map = new maplibregl.Map({
   transformRequest: transformRequest
 });
 
+const map = new maplibregl.Map({attributionControl: false})
+    .addControl(new maplibregl.AttributionControl({
+        customAttribution: 'OpenStreetMap Contributors'
+    }));
+
 // Instantiates the scrollama function
 var scroller = scrollama();
 
