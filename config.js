@@ -74,13 +74,23 @@ var config = {
             imageCredit: '<a href="https://www.adeus.org/">ADEUS</a>',
             description: "Dans son objectif de « révolution des mobilités », l’Eurométropole de Strasbourg a développé plusieurs projets visant à favoriser les modes de déplacement doux et collectifs afin de lutter contre le dérèglement climatique. Parmi eux, le Réseau express métropolitain (REME), lancé en 2022, a pour objectif de transformer progressivement les 13 gares du territoire en pôles d’échanges multimodaux et à améliorer la fréquence et la cadence de leur desserte en TER. Dans ce contexte, le pôle multimodal de l’aéroport d’Entzheim a mis à disposition des usagers du TER deux de ses parkings, élargissant ainsi l’offre de stationnement multimodal offerte depuis 2008 par la gare d’Entzheim-aéroport, qui dispose également de deux parcs à vélo sécurisés et de multiples connexions avec le réseau de bus CTS.",
             location: {
-                center: [7.62629, 48.54161],
-                zoom: 14,
-                pitch: 40,
-                bearing: 8
+                center: [7.61872, 48.5427],
+                zoom: 15,
+                pitch: 44,
+                bearing: -17.5
             },
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+                {
+                    layer: '04_Entzheim',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: '04_Entzheim',
+                    opacity: 0
+                }
+            ]
         },
         {
             id: '5',
