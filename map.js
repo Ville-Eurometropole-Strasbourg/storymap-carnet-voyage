@@ -202,12 +202,13 @@ map.on("load", function () {
     'pistecyclable': 'Piste Cyclable'
   };
 
-  map.addControl(new MaplibreLegendControl(targets, {
-    showDefault: false, 
+  map.addControl(new MaplibreLegendControl.MaplibreLegendControl(targets, {
+    title: 'Légende',
+    showDefault: true, 
     showCheckbox: false, 
     onlyRendered: true,
     reverseOrder: true
-  }), 'bottom-left');
+  }), 'bottom-right');
 
   
 
