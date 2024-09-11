@@ -51,6 +51,10 @@
       "type": "geojson",
       "data": "assets/01_Fischer.geojson"
     },
+    "02_Nextmed": {
+      "type": "geojson",
+      "data": "assets/02_Nextmed.geojson"
+    },
     "04_Entzheim": {
       "type": "geojson",
       "data": "assets/04_Entzheim.geojson"
@@ -686,6 +690,18 @@
       "id": "01_Fischer",
       "type": "fill-extrusion",
       "source": "01_Fischer",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "hsl(35, 8%, 85%)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "02_Nextmed",
+      "type": "fill-extrusion",
+      "source": "02_Nextmed",
       "minzoom": 14,
       "paint": {
         "fill-extrusion-color": "hsl(35, 8%, 85%)",
