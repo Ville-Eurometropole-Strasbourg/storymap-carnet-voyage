@@ -150,15 +150,6 @@ if (footer.innerText.length > 0) {
   story.appendChild(footer);
 }
 
-// Honestly, don't know what this does
-const transformRequest = (url) => {
-  const hasQuery = url.indexOf("?") !== -1;
-  const suffix = hasQuery ? "&pluginName=journalismScrollytelling" : "?pluginName=journalismScrollytelling";
-  return {
-    url: url + suffix
-  }
-}
-
 /* This section creates the map element with the
 attributes from the main section of the config.js file */
 
@@ -170,7 +161,6 @@ var map = new maplibregl.Map({
   bearing: config.chapters[0].location.bearing,
   pitch: config.chapters[0].location.pitch,
   scrollZoom: false,
-  transformRequest: transformRequest,
   attributionControl: false
 });
 
