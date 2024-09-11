@@ -161,7 +161,8 @@ var map = new maplibregl.Map({
   bearing: config.chapters[0].location.bearing,
   pitch: config.chapters[0].location.pitch,
   scrollZoom: false,
-  attributionControl: false
+  attributionControl: false,
+  //hash: "mapHash"
 });
 
 map.addControl(new maplibregl.AttributionControl({

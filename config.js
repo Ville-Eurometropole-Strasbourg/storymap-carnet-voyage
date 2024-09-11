@@ -5,10 +5,23 @@ var config = {
     //toptitle: 'Points Unknown | Tutorial 10 | Mapbox Storytelling',
     title: 'Préserver les ressources et les paysages',
     //byline: 'By',
-    description: 'Le 5 octobre 2019, l’Eurométropole de Strasbourg, la Communauté de communes de la Vallée de la Bruche et la Communauté d’agglomération de Saint-Dié-des-Vosges signaient un Contrat de réciprocité liant ces trois territoires. <br/>Son objectif : construire des accords stratégiques entre territoires urbains et montagnards et mettre en commun leurs atouts et ressources propres. Parmi les projets phares portés par ce Contrat figure une meilleure visibilité et accessibilité du Festival de géographie de Saint-Dié-des-Vosges (FIG) pour les habitants de l’Eurométropole.<br/><br/> Dans cette optique, les visiteurs du FIG bénéficient désormais d’un billet de train retour à 1€ pour toutes les gares en direction de Strasbourg.<br/><br/>Pour fêter les 5 ans du Contrat de réciprocité et poursuivre les discussions déjà engagées, les conseillers municipaux des trois territoires ont été invités à emprunter cette ligne à l’occasion de l’édition 2024 du FIG. Pour accompagner leur trajet, un <a href="https://strasbourg.eu/" target="_blank">carnet de voyage</a> soulignant les ressources et paysages qui jonchent ce trajet leur a été distribué. Cette version web du carnet de voyage permet d’en apprendre plus sur ces divers éléments.',
+    description: 'Le 5 octobre 2019, l’Eurométropole de Strasbourg, la Communauté de communes de la Vallée de la Bruche et la Communauté d’agglomération de Saint-Dié-des-Vosges signaient un Contrat de réciprocité liant ces trois territoires. <br/>Son objectif : construire des accords stratégiques entre territoires urbains et montagnards et mettre en commun leurs atouts et ressources propres. Parmi les projets phares portés par ce Contrat figure une meilleure visibilité et accessibilité du Festival de géographie de Saint-Dié-des-Vosges (FIG) pour les habitants de l’Eurométropole.<br/><br/> Dans cette optique, les visiteurs du FIG bénéficient désormais d’un billet de train retour à 1€ pour toutes les gares en direction de Strasbourg.',
     footer: 'Travail réalisé dans le cadre du Festival International de Géographie 2024 à Saint-Dié-des-Vosges',
     footerAttribution: '<a href="https://sig.strasbourg.eu/" target="_blank">Service Géomatique et Connaissance du Territoire - Eurométropole de Strasbourg</a> | <a href="https://www.strasbourg.eu/mentions-legales" target="_blank">Mentions légales</a>',
     chapters: [
+        {
+            id: '0',
+            title: 'Voyage entre Strasbourg et Saint-Dié-des-Vosges',
+            description: 'Pour fêter les 5 ans du Contrat de réciprocité et poursuivre les discussions déjà engagées, les conseillers municipaux des trois territoires ont été invités à emprunter cette ligne à l’occasion de l’édition 2024 du FIG. Pour accompagner leur trajet, un <a href="https://strasbourg.eu/" target="_blank">carnet de voyage</a> soulignant les ressources et paysages qui jonchent ce trajet leur a été distribué. Cette version web du carnet de voyage permet d’en apprendre plus sur ces divers éléments.',
+            location: {
+                center: [7.746, 48.4389],
+                zoom: 9,
+                pitch: 31,
+                bearing: 180
+            },
+            onChapterEnter: [],
+            onChapterExit: []
+        },
         {
             id: '1',
             title: 'Revalorisation des friches industrielles',
@@ -76,10 +89,10 @@ var config = {
             imageCredit: '<a href="https://www.adeus.org/">ADEUS</a>',
             description: 'Dans la Vallée de la Bruche, la forêt occupe près de 80% du territoire et bénéficie d’une gestion très majoritairement publique. Avec la remise en cause de la monoculture forestière et la prise en compte de son importance face aux enjeux climatiques, la forêt a repris une place de taille dans les politiques engagées par la Communauté de communes. En 2016, elle a mené une vaste réflexion sur la forêt et le bois avec l’ensemble des acteurs concernés. Celle-ci a mené à l’adoption, en 2021, d’une Stratégie filière forêt-bois, qui propose un programme d’actions portant sur une gestion durable de la forêt, la mise en place de politiques d’utilisation du matériau bois dans la maîtrise d’ouvrage publique, ainsi que la sensibilisation et l’accueil du public.',
             location: {
-                center: [7.340766, 48.525691],
-                zoom: 15,
-                pitch: 40,
-                bearing: -7
+                center: [7.331572, 48.52629],
+                zoom: 16,
+                pitch: 54,
+                bearing: 41
             },
             onChapterEnter: [
                 {
