@@ -181,6 +181,13 @@ map.addControl(new maplibregl.AttributionControl({
   customAttribution: '<a href="https://www.openstreetmap.org/">📦</a> <b>données</b> par <a href="https://www.openstreetmap.org/copyright"><b>©️ les contributeurs & contributrices OpenStreetMap</b></a>'
 }));
 
+map.addControl(
+  new maplibregl.NavigationControl({
+    showZoom: false,
+    showCompass: true,
+  })
+);
+
 // Instantiates the scrollama function
 var scroller = scrollama();
 
@@ -190,6 +197,20 @@ scrolling to the chapters and move the map from one location to another
 while changing the zoom level, pitch and bearing */
 
 map.on("load", function () {
+
+  const targets = {
+    'pistecyclable': 'Piste Cyclable'
+  };
+
+  map.addControl(new MaplibreLegendControl(targets, {
+    showDefault: false, 
+    showCheckbox: false, 
+    onlyRendered: true,
+    reverseOrder: true
+  }), 'bottom-left');
+
+  
+
   // Setup the instance, pass callback functions
   scroller
     .setup({
