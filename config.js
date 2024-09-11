@@ -29,13 +29,23 @@ var config = {
             imageCredit: '<a href="https://www.adeus.org/">ADEUS</a>',
             description: 'Avec les mutations économiques de la fin du 20e siècle, de nombreux sites industriels ont vu leur activité disparaître. Afin de revaloriser ce patrimoine bâti, l’Eurométropole de Strasbourg et ses communes ont initié plusieurs projets visant à décontaminer et réaffecter ces friches. A titre d’exemple, à Reichstett, l’ancienne raffinerie a laissé place à l’EcoParc Rhénan, un parc d’activités de 85 hectares pour les secteurs de l’industrie, de l’artisanat et du service. A Strasbourg, le projet urbain Deux-Rives / Zwei-Ufer vise la revalorisation de 250 hectares de friches portuaires en un véritable quartier, mêlant logements, commerces, lieux de travail et espaces verts. A Schiltigheim, l’ancienne brasserie Fischer fait l’objet d’une requalification en secteur à vocation mixte, ayant pour objectif d’augmenter l’offre résidentielle au sud de la ville, de mettre en valeur le patrimoine industriel brassicole, et de proposer des activités économiques et de loisirs créatrices d’emplois.',
             location: {
-                center: [7.74401, 48.60065],
-                zoom: 15,
-                pitch: 0,
-                bearing: 0
+                center: [7.742632, 48.602402],
+                zoom: 16,
+                pitch: 50,
+                bearing: 20
             },
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+                {
+                    layer: '01_Fischer',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: '01_Fischer',
+                    opacity: 0
+                }
+            ]
         },
         {
             id: '2',
