@@ -206,3 +206,7 @@ a:visited {
     transform: rotate(-45deg);
   }
 }
+
+.maplibregl-ctrl button.maplibregl-ctrl-compass .maplibregl-ctrl-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='29' fill='%23ec1d25' viewBox='0 0 29 29'%3E%3Cpath d='m10.5 14 4-8 4 8h-8z'/%3E%3Cpath fill='%23ccc' d='m10.5 16 4 8 4-8h-8z'/%3E%3C/svg%3E");
+}
