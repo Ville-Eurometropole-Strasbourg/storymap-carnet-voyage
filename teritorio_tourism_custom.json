@@ -47,6 +47,10 @@
       "type": "geojson",
       "data": "assets/ligne_strasbourg_st_die.geojson"
     },
+    "01_Fischer": {
+      "type": "geojson",
+      "data": "assets/01_Fischer.geojson"
+    },
     "04_Entzheim": {
       "type": "geojson",
       "data": "assets/04_Entzheim.geojson"
@@ -676,6 +680,18 @@
         "fill-opacity": {"base": 1, "stops": [[13, 0], [16, 1]]},
         "fill-outline-color": "#dfdbd7",
         "fill-translate": {"base": 1, "stops": [[14, [0, 0]], [16, [-2, -2]]]}
+      }
+    },
+    {
+      "id": "01_Fischer",
+      "type": "fill-extrusion",
+      "source": "01_Fischer",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "hsl(35, 8%, 85%)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
       }
     },
     {
