@@ -81,6 +81,18 @@ if (header.innerText.length > 0) {
   story.appendChild(header);
 }
 
+var arrowDown = document.createElement('div');
+arrowDown.classList.add("arrow-down");
+var leftArrow = document.createElement('div');
+leftArrow.classList.add("general-arrow");
+leftArrow.classList.add("left-arrow");
+var rightArrow = document.createElement('div');
+rightArrow.classList.add("general-arrow");
+rightArrow.classList.add("right-arrow");
+arrowDown.appendChild(leftArrow);
+arrowDown.appendChild(rightArrow);
+header.appendChild(arrowDown);
+
 /* After building the elements and assigning content to the header these
 functions will loop through the chapters in the config.js file,
 create the vignette elements and assign them their respective content */
