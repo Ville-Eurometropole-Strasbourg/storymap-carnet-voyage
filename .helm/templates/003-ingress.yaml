@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    {{ if eq .Values.sslmode "letsencrypt" }}cert-manager.io/cluster-issuer: letsencrypt {{ end }}
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "PUT, GET, POST, OPTIONS"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://{{ .Values.env_url }}, https://www.{{ .Values.env_url }}"
+    nginx.ingress.kubernetes.io/cors-expose-headers: "*"
+  name: {{ .Values.werf.name }}-{{ .Values.werf.env }}
+spec:
+  ingressClassName: nginx-agc
+  tls: 
+
+  {{ if eq .Values.sslmode "letsencrypt" }}
+  - secretName: {{ .Values.sslmode }}-{{ .Values.werf.env }}
+    hosts:
+    - {{ .Values.env_url }}
+  {{ end }}
+  
+  {{ if eq .Values.sslmode "rgs" }}
+  - secretName: {{ .Values.sslmode }}-{{ .Values.werf.name }}
+    hosts:
+    - {{ .Values.env_url }}
+  {{ end }}
+    
+  rules:
+  - host: {{ .Values.env_url }}
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ .Values.werf.name }}-{{ .Values.werf.env }}
+            port:
+              number: {{ .Values.app.port }}
