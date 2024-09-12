@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: {{ .Values.werf.name }}-{{ .Values.werf.env }}
+  name: {{ .Values.werf.name }}-{{ .Values.werf.env }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.werf.name }}-{{ .Values.werf.env }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.werf.name }}-{{ .Values.werf.env }}
+    spec:
+      imagePullSecrets:
+        - name: registry-secret
+      containers:
+      - image: {{ .Values.werf.image.appli }}
+        name: {{ .Values.werf.name }}
+        ports:
+        - containerPort: {{ .Values.app.port }}
+          name: http
+        volumeMounts:
+          - name: nginx-config
+            mountPath: /etc/nginx/nginx.conf
+            subPath: nginx.conf
+        env:
+          - name: url
+            value: https://{{ .Values.env_url }}
+        resources:
+          {{- toYaml .Values.app.resources | nindent 12 }}
+      volumes:
+        - name: nginx-config
+          configMap:
+            name: {{ .Values.werf.name }}-{{ .Values.werf.env }}-nginx-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: {{ .Values.werf.name }}-{{ .Values.werf.env }}
+  name: {{ .Values.werf.name }}-{{ .Values.werf.env }}
+spec:
+  ports:
+  - name: "http"
+    port: {{ .Values.app.port }}
+  selector:
+    app: {{ .Values.werf.name }}-{{ .Values.werf.env }}
