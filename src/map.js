@@ -113,6 +113,7 @@ config.chapters.forEach((record, idx) => {
   if (record.image) {
     var image = new Image();
     image.src = record.image;
+    image.alt = `Illustration : ${record.title}`;
     chapter.appendChild(image);
   }
   // Creates the image credit for the vignette
