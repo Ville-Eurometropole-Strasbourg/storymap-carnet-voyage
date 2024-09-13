@@ -212,3 +212,37 @@ a:visited {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='29' fill='%23ec1d25' viewBox='0 0 29 29'%3E%3Cpath d='m10.5 14 4-8 4 8h-8z'/%3E%3Cpath fill='%23ccc' d='m10.5 16 4 8 4-8h-8z'/%3E%3C/svg%3E");
 }
 /* --- */
+
+.logo-container {
+  display: flex;
+  justify-content: center;  /* Center the logos horizontally */
+  align-items: center;      /* Vertically align logos */
+  gap: 15px;                /* Adds space between logos */
+  margin-bottom: 10px;
+}
+
+.logo-container img {
+  display: inline-block;
+  width: auto;              /* Keep original aspect ratio */
+}
+
+/* For large screens */
+@media (min-width: 1200px) {
+  .logo-container img {
+    max-height: 60px;       /* Larger logos for big screens */
+  }
+}
+
+/* For medium screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .logo-container img {
+    max-height: 50px;       /* Medium logo size */
+  }
+}
+
+/* For small screens (tablets and mobile devices) */
+@media (max-width: 767px) {
+  .logo-container img {
+    max-height: 40px;       /* Smaller logos for mobile */
+  }
+}
