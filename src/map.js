@@ -51,6 +51,25 @@ features.setAttribute('id', 'features');
 // Main 'header' element
 var header = document.createElement('div');
 
+// Logo section: This appends logos from the config file to the header
+if (config.logos) {
+  var logoContainer = document.createElement('div');
+  logoContainer.classList.add('logo-container'); // Add a CSS class for styling
+
+  config.logos.forEach(logo => {
+    var logoLink = document.createElement('a');
+    logoLink.href = logo.href;
+    logoLink.target = '_blank'; // Open in new tab
+    var logoImage = new Image();
+    logoImage.src = logo.src;
+    logoImage.alt = logo.alt;
+    logoLink.appendChild(logoImage);
+    logoContainer.appendChild(logoLink);
+  });
+
+  header.appendChild(logoContainer);
+}
+
 // If the content exists, assign it to the 'header' element
 if (config.toptitle) {
   var toptitle = document.createElement('h4');
