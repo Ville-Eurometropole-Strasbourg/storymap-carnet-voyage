@@ -2114,6 +2114,14 @@
       }
     },
     {
+      "id": "office_tourisme",
+      "type": "symbol",
+      "source": "office_tourisme",
+      "layout": {
+        "icon-image": "services-information⬤"
+    }
+    },
+    {
       "id": "07_PVD",
       "type": "line",
       "source": "07_PVD",
