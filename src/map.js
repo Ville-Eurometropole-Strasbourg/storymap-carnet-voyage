@@ -51,6 +51,17 @@ features.setAttribute('id', 'features');
 // Main 'header' element
 var header = document.createElement('div');
 
+// Function to determine the appropriate logo size based on screen width
+function getLogoSize(size) {
+  if (window.innerWidth >= 1200) {
+    return size.large;  // Large screens
+  } else if (window.innerWidth >= 768) {
+    return size.medium; // Medium screens
+  } else {
+    return size.small;  // Small screens
+  }
+}
+
 // Logo section: This appends logos from the config file to the header
 if (config.logos) {
   var logoContainer = document.createElement('div');
@@ -60,15 +71,32 @@ if (config.logos) {
     var logoLink = document.createElement('a');
     logoLink.href = logo.href;
     logoLink.target = '_blank'; // Open in new tab
+
     var logoImage = new Image();
     logoImage.src = logo.src;
     logoImage.alt = logo.alt;
+
+    // Set the logo height based on screen size
+    logoImage.style.height = getLogoSize(logo.size) + 'px';
+    logoImage.style.width = 'auto'; // Maintain aspect ratio
+
     logoLink.appendChild(logoImage);
     logoContainer.appendChild(logoLink);
   });
 
   header.appendChild(logoContainer);
 }
+
+// Optionally, you can add a window resize listener to adjust logo sizes dynamically
+window.addEventListener('resize', function() {
+  var logos = document.querySelectorAll('.logo-container img');
+  config.logos.forEach((logo, index) => {
+    logos[index].style.height = getLogoSize(logo.size) + 'px';
+  });
+});
+
+
+
 
 // If the content exists, assign it to the 'header' element
 if (config.toptitle) {
