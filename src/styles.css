@@ -49,13 +49,13 @@ body {
 #header h1 {
   font-weight: 700;
   text-transform: uppercase;
-  font-family: 'Merriweather', serif;
+  font-family: 'Atkinson Hyperlegible', serif;
   text-align: left;
   max-width: 600px;
 }
 
 #header h4 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   font-weight: 300;
   margin-bottom: 0.5em;
   margin-left: auto;
@@ -71,7 +71,7 @@ body {
 }
 
 #header p {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   font-weight: 400;
   text-align: left;
   font-size: 1.3em;
@@ -81,13 +81,13 @@ body {
 #features h3 {
   font-weight: 700;
   text-transform: uppercase;
-  font-family: 'Merriweather', serif;
+  font-family: 'Atkinson Hyperlegible', serif;
   text-align: left;
   max-width: 50vw;
 }
 
 #features p {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   text-align: left;
   font-size: 1.2em;
   max-width: 50vw;
@@ -99,7 +99,7 @@ body {
 }
 
 #footer p {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   font-size: 0.9em;
   max-width: 600px;
   padding: 1em;
