@@ -20,7 +20,7 @@ var config = {
               }
           },
         {
-          src: 'images/adeus-logo-seul.svg',
+          src: 'images/adeus-logo.svg',
           href: 'https://www.adeus.org/',
           alt: 'Logo de l’ADEUS',
           size: {
@@ -44,9 +44,9 @@ var config = {
           href: 'https://www.ca-saintdie.fr/',
           alt: 'Logo de la Communauté d’Agglomération de Saint-Dié-des-Vosges',
           size: {
-            small: 100,
-            medium: 100,
-            large: 100
+              small: 100,
+              medium: 100,
+              large: 100
             }
         }
       ],
