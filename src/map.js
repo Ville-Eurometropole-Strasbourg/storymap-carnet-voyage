@@ -179,7 +179,7 @@ var map = new maplibregl.Map({
 });
 
 map.addControl(new maplibregl.AttributionControl({
-  customAttribution: '<a href="https://www.openstreetmap.org/">📦</a> <b>données</b> par <a href="https://www.openstreetmap.org/copyright"><b>©️ les contributeurs & contributrices OpenStreetMap</b></a>'
+  customAttribution: '<a href="https://www.openstreetmap.org/">📦</a> <b>données</b> par <a href="https://www.openstreetmap.org/copyright"><b>©️ les contributeurs & contributrices OpenStreetMap</b></a><br/><a href="https://github.com/teritrio/teritorio-tourism-gl-style/blob/master/LICENSE.md">🗺️</a> <b>fond de carte</b> par <a href="https://www.teritorio.fr">Teritorio</a> avec le schéma <a href="https://openmaptiles.org/"><b>OpenMapTiles</b></a> <a href="https://maplibre.org/maplibre-gl-js/docs/">🚀</a> <b>affichage</b> de cartes par <a href="https://maplibre.org/maplibre-gl-js/docs/"><b>MapLibre</b></a>'
 }));
 
 map.addControl(
@@ -204,14 +204,14 @@ map.on("load", function () {
   };
 
   map.addControl(new MaplibreLegendControl.MaplibreLegendControl(targets, {
-    title: 'Légende',
-    showDefault: true, 
-    showCheckbox: false, 
+    title: '\n',
+    showDefault: true,
+    showCheckbox: false,
     onlyRendered: true,
     reverseOrder: true
   }), 'bottom-right');
 
-  
+
 
   // Setup the instance, pass callback functions
   scroller
