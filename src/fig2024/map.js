@@ -51,6 +51,53 @@ features.setAttribute('id', 'features');
 // Main 'header' element
 var header = document.createElement('div');
 
+// Function to determine the appropriate logo size based on screen width
+function getLogoSize(size) {
+  if (window.innerWidth >= 1200) {
+    return size.large;  // Large screens
+  } else if (window.innerWidth >= 768) {
+    return size.medium; // Medium screens
+  } else {
+    return size.small;  // Small screens
+  }
+}
+
+// Logo section: This appends logos from the config file to the header
+if (config.logos) {
+  var logoContainer = document.createElement('div');
+  logoContainer.classList.add('logo-container'); // Add a CSS class for styling
+
+  config.logos.forEach(logo => {
+    var logoLink = document.createElement('a');
+    logoLink.href = logo.href;
+    logoLink.target = '_blank'; // Open in new tab
+
+    var logoImage = new Image();
+    logoImage.src = logo.src;
+    logoImage.alt = logo.alt;
+
+    // Set the logo height based on screen size
+    logoImage.style.height = getLogoSize(logo.size) + 'px';
+    logoImage.style.width = 'auto'; // Maintain aspect ratio
+
+    logoLink.appendChild(logoImage);
+    logoContainer.appendChild(logoLink);
+  });
+
+  header.appendChild(logoContainer);
+}
+
+// Optionally, you can add a window resize listener to adjust logo sizes dynamically
+window.addEventListener('resize', function() {
+  var logos = document.querySelectorAll('.logo-container img');
+  config.logos.forEach((logo, index) => {
+    logos[index].style.height = getLogoSize(logo.size) + 'px';
+  });
+});
+
+
+
+
 // If the content exists, assign it to the 'header' element
 if (config.toptitle) {
   var toptitle = document.createElement('h4');
@@ -179,7 +226,7 @@ var map = new maplibregl.Map({
 });
 
 map.addControl(new maplibregl.AttributionControl({
-  customAttribution: '<a href="https://www.openstreetmap.org/">📦</a> <b>données</b> par <a href="https://www.openstreetmap.org/copyright"><b>©️ les contributeurs & contributrices OpenStreetMap</b></a>'
+  customAttribution: '<a href="https://www.openstreetmap.org/">📦</a> <b>données</b> par <a href="https://www.openstreetmap.org/copyright"><b>©️ les contributeurs & contributrices OpenStreetMap</b></a><br/><a href="https://github.com/teritrio/teritorio-tourism-gl-style/blob/master/LICENSE.md">🗺️</a> <b>fond de carte</b> par <a href="https://www.teritorio.fr">Teritorio</a> avec le schéma <a href="https://openmaptiles.org/"><b>OpenMapTiles</b></a> <a href="https://maplibre.org/maplibre-gl-js/docs/">🚀</a> <b>affichage</b> de cartes par <a href="https://maplibre.org/maplibre-gl-js/docs/"><b>MapLibre</b></a>'
 }));
 
 map.addControl(
@@ -204,14 +251,14 @@ map.on("load", function () {
   };
 
   map.addControl(new MaplibreLegendControl.MaplibreLegendControl(targets, {
-    title: 'Légende',
-    showDefault: true, 
-    showCheckbox: false, 
+    title: '\n',
+    showDefault: true,
+    showCheckbox: false,
     onlyRendered: true,
     reverseOrder: true
   }), 'bottom-right');
 
-  
+
 
   // Setup the instance, pass callback functions
   scroller
