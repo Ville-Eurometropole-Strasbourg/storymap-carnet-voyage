@@ -1,5 +1,5 @@
 var config = {    
-    style: 'teritorio_tourism_custom.json',
+    style: 'style.json',
     theme: 'light',
     alignment: 'left',
     //toptitle: 'Points Unknown | Tutorial 10 | Mapbox Storytelling',
@@ -56,8 +56,8 @@ var config = {
             location: {
                 center: [7.743709, 48.576721],
                 zoom: 15,
-                pitch: 0,
-                bearing: 0
+                pitch: 49,
+                bearing: 36
             },
             onChapterEnter: [],
             onChapterExit: []
@@ -135,9 +135,9 @@ var config = {
             description: 'Village précurseur de l’industrie textile dans la Vallée de la Bruche, Lutzelhouse abrite au milieu du XIXe siècle une filature de coton et de laine peignée, un moulin et une scierie mécanique. A proximité de l’usine, la famille Scheidecker fait ériger un château. En 2022, dans une optique de mise en valeur de ses friches industrielles, l’ancien site Scheidecker est acquis par la Communauté de communes de la Vallée de la Bruche. Depuis, une réflexion est menée sur l’avenir de ce site avec l’ensemble des partenaires de la collectivité, afin de favoriser l’implantation de projets mixtes et innovants sur cet ancien site industriel.',
             location: {
                 center: [7.2864385, 48.515119],
-                zoom: 15,
-                pitch: 40,
-                bearing: -7
+                zoom: 16,
+                pitch: 60,
+                bearing: 0
             },
             onChapterEnter: [],
             onChapterExit: []
