@@ -8,6 +8,18 @@ var config = {
     description: 'Le 5 octobre 2019, l’Eurométropole de Strasbourg, la Communauté de communes de la Vallée de la Bruche et la Communauté d’agglomération de Saint-Dié-des-Vosges signaient un Contrat de réciprocité liant ces trois territoires. <br/>Son objectif : construire des accords stratégiques entre territoires urbains et montagnards et mettre en commun leurs atouts et ressources propres. Parmi les projets phares portés par ce Contrat figure une meilleure visibilité et accessibilité du Festival de géographie de Saint-Dié-des-Vosges (FIG) pour les habitants de l’Eurométropole.<br/><br/> Dans cette optique, les visiteurs du FIG bénéficient désormais d’un billet de train retour à 1€ pour toutes les gares en direction de Strasbourg.',
     footer: 'Travail réalisé dans le cadre du Festival International de Géographie 2024 à Saint-Dié-des-Vosges',
     footerAttribution: '<a href="https://sig.strasbourg.eu/" target="_blank">Service Géomatique et Connaissance du Territoire - Eurométropole de Strasbourg</a> | <a href="https://www.strasbourg.eu/mentions-legales" target="_blank">Mentions légales</a>',
+    logos: [
+        {
+            src: 'images/ems-logo.jpg',
+            href: 'https://www.strasbourg.eu/',
+            alt: 'Logo de l’Eurométropole de Strasbourg'
+          },
+        {
+          src: 'images/adeus-logo-seul.svg',
+          href: 'https://www.adeus.org/',
+          alt: 'Logo de l’ADEUS'
+        }
+      ],
     chapters: [
         {
             id: '0',
