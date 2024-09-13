@@ -1,5 +1,5 @@
 var config = {    
-    style: 'teritorio_tourism_custom.json',
+    style: 'style.json',
     theme: 'light',
     alignment: 'left',
     //toptitle: 'Points Unknown | Tutorial 10 | Mapbox Storytelling',
@@ -8,6 +8,48 @@ var config = {
     description: 'Le 5 octobre 2019, l’Eurométropole de Strasbourg, la Communauté de communes de la Vallée de la Bruche et la Communauté d’agglomération de Saint-Dié-des-Vosges signaient un Contrat de réciprocité liant ces trois territoires. <br/>Son objectif : construire des accords stratégiques entre territoires urbains et montagnards et mettre en commun leurs atouts et ressources propres. Parmi les projets phares portés par ce Contrat figure une meilleure visibilité et accessibilité du Festival de géographie de Saint-Dié-des-Vosges (FIG) pour les habitants de l’Eurométropole.<br/><br/> Dans cette optique, les visiteurs du FIG bénéficient désormais d’un billet de train retour à 1€ pour toutes les gares en direction de Strasbourg.',
     footer: 'Travail réalisé dans le cadre du Festival International de Géographie 2024 à Saint-Dié-des-Vosges',
     footerAttribution: '<a href="https://sig.strasbourg.eu/" target="_blank">Service Géomatique et Connaissance du Territoire - Eurométropole de Strasbourg</a> | <a href="https://www.strasbourg.eu/mentions-legales" target="_blank">Mentions légales</a>',
+    logos: [
+        {
+            src: 'images/ems-logo.jpg',
+            href: 'https://www.strasbourg.eu/',
+            alt: 'Logo de l’Eurométropole de Strasbourg',
+            size: {
+                small: 30,   // Logo height for small screens
+                medium: 50,  // Logo height for medium screens
+                large: 70    // Logo height for large screens
+              }
+          },
+        {
+          src: 'images/adeus-logo.svg',
+          href: 'https://www.adeus.org/',
+          alt: 'Logo de l’ADEUS',
+          size: {
+              small: 30,
+              medium: 50,
+              large: 70
+            }
+        },
+        {
+          src: 'images/logo-comcom-vallee-de-la-bruche.jpg',
+          href: 'https://cc.valleedelabruche.fr/',
+          alt: 'Logo de la Communauté de communes de la Bruche',
+          size: {
+              small: 100,
+              medium: 100,
+              large: 100
+            }
+        },
+        {
+          src: 'images/logo-agglo-saint-die-des-vosges.svg',
+          href: 'https://www.ca-saintdie.fr/',
+          alt: 'Logo de la Communauté d’Agglomération de Saint-Dié-des-Vosges',
+          size: {
+              small: 100,
+              medium: 100,
+              large: 100
+            }
+        }
+      ],
     chapters: [
         {
             id: '0',
@@ -56,8 +98,8 @@ var config = {
             location: {
                 center: [7.743709, 48.576721],
                 zoom: 15,
-                pitch: 0,
-                bearing: 0
+                pitch: 49,
+                bearing: 36
             },
             onChapterEnter: [],
             onChapterExit: []
@@ -135,9 +177,9 @@ var config = {
             description: 'Village précurseur de l’industrie textile dans la Vallée de la Bruche, Lutzelhouse abrite au milieu du XIXe siècle une filature de coton et de laine peignée, un moulin et une scierie mécanique. A proximité de l’usine, la famille Scheidecker fait ériger un château. En 2022, dans une optique de mise en valeur de ses friches industrielles, l’ancien site Scheidecker est acquis par la Communauté de communes de la Vallée de la Bruche. Depuis, une réflexion est menée sur l’avenir de ce site avec l’ensemble des partenaires de la collectivité, afin de favoriser l’implantation de projets mixtes et innovants sur cet ancien site industriel.',
             location: {
                 center: [7.2864385, 48.515119],
-                zoom: 15,
-                pitch: 40,
-                bearing: -7
+                zoom: 16,
+                pitch: 60,
+                bearing: 0
             },
             onChapterEnter: [],
             onChapterExit: []
