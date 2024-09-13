@@ -63,6 +63,14 @@
       "type": "geojson",
       "data": "assets/05_Forets.geojson"
     },
+    "06_Scheidecker": {
+      "type": "geojson",
+      "data": "assets/06_Scheidecker.geojson"
+    },
+    "06_Scheidecker_cheminee": {
+      "type": "geojson",
+      "data": "assets/06_Scheidecker_cheminee.geojson"
+    },
     "07_PVD": {
       "type": "geojson",
       "data": "assets/07_PVD.geojson"
@@ -78,8 +86,7 @@
     "18_PVD": {
       "type": "geojson",
       "data": "assets/18_PVD.geojson"
-    }
-    ,
+    },
     "19_Gare": {
       "type": "geojson",
       "data": "assets/19_Gare.geojson"
@@ -692,7 +699,7 @@
       "source": "01_Fischer",
       "minzoom": 14,
       "paint": {
-        "fill-extrusion-color": "hsl(35, 8%, 85%)",
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
         "fill-extrusion-height": 10,
         "fill-extrusion-base": 0,
         "fill-extrusion-opacity": 0.8
@@ -704,7 +711,7 @@
       "source": "02_Nextmed",
       "minzoom": 14,
       "paint": {
-        "fill-extrusion-color": "hsl(35, 8%, 85%)",
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
         "fill-extrusion-height": 10,
         "fill-extrusion-base": 0,
         "fill-extrusion-opacity": 0.8
@@ -716,7 +723,7 @@
       "source": "04_Entzheim",
       "minzoom": 14,
       "paint": {
-        "fill-extrusion-color": "hsl(35, 8%, 85%)",
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
         "fill-extrusion-height": 10,
         "fill-extrusion-base": 0,
         "fill-extrusion-opacity": 0.8
@@ -728,8 +735,32 @@
       "source": "05_Forets",
       "minzoom": 14,
       "paint": {
-        "fill-extrusion-color": "hsl(35, 8%, 85%)",
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
         "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "06_Scheidecker",
+      "type": "fill-extrusion",
+      "source": "06_Scheidecker",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "06_Scheidecker_cheminee",
+      "type": "fill-extrusion",
+      "source": "06_Scheidecker_cheminee",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 50,
         "fill-extrusion-base": 0,
         "fill-extrusion-opacity": 0.8
       }
@@ -740,7 +771,7 @@
       "source": "08_Locomotive",
       "minzoom": 14,
       "paint": {
-        "fill-extrusion-color": "hsl(35, 8%, 85%)",
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
         "fill-extrusion-height": 10,
         "fill-extrusion-base": 0,
         "fill-extrusion-opacity": 0.8
@@ -752,7 +783,7 @@
       "source": "19_Gare",
       "minzoom": 14,
       "paint": {
-        "fill-extrusion-color": "hsl(35, 8%, 85%)",
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
         "fill-extrusion-height": 10,
         "fill-extrusion-base": 0,
         "fill-extrusion-opacity": 0.8
@@ -892,7 +923,7 @@
       ],
       "layout": {"line-join": "round"},
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "rgba(207, 205, 202, 1)",
         "line-opacity": 1,
         "line-width": {"base": 1.2, "stops": [[8, 1.5], [20, 17]]},
         "line-dasharray": [0.5, 0.25]
@@ -1226,7 +1257,7 @@
       ],
       "layout": {"line-join": "round"},
       "paint": {
-        "line-color": "#fff4c6",
+        "line-color": "rgba(255, 255, 255, 1)",
         "line-width": {"base": 1.2, "stops": [[6.5, 0], [7, 0.5], [20, 10]]}
       }
     },
@@ -1244,7 +1275,7 @@
       ],
       "layout": {"line-join": "round"},
       "paint": {
-        "line-color": "rgba(248, 229, 218, 1)",
+        "line-color": "rgba(245, 242, 240, 1)",
         "line-width": {"base": 1.2, "stops": [[6.5, 0], [7, 0.5], [20, 18]]}
       }
     },
@@ -2081,32 +2112,22 @@
       "id": "07_PVD",
       "type": "line",
       "source": "07_PVD",
-      "opacity": 0,
-      "paint": {
-        "line-color": "#ff0000",
-        "line-width": 2,
-        "line-opacity": 0.6
-      }
+      "paint": {"line-color": "#ff0000", "line-width": 2, "line-opacity": 0.6},
+      "opacity": 0
     },
     {
       "id": "18_PVD",
       "type": "line",
       "source": "18_PVD",
-      "opacity": 0,
-      "paint": {
-        "line-color": "#ff0000",
-        "line-width": 2,
-        "line-opacity": 0.6
-      }
+      "paint": {"line-color": "#ff0000", "line-width": 2, "line-opacity": 0.6},
+      "opacity": 0
     },
     {
       "id": "13_Eoliennes",
       "type": "circle",
       "source": "13_Eoliennes",
-      "opacity": 0,
-      "paint": {
-        "circle-color": "rgba(179, 43, 43, 1)"
-      }
+      "paint": {"circle-color": "rgba(179, 43, 43, 1)"},
+      "opacity": 0
     },
     {
       "id": "railway-transit",
@@ -2273,7 +2294,7 @@
       ],
       "layout": {"line-join": "round"},
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "#cfcdca",
         "line-opacity": 1,
         "line-width": {
           "base": 1.2,
@@ -2617,7 +2638,7 @@
       ],
       "layout": {"line-join": "round"},
       "paint": {
-        "line-color": "#fea",
+        "line-color": "rgba(255, 255, 255, 1)",
         "line-width": {
           "base": 1.2,
           "stops": [[12.5, 0], [13, 1.5], [14, 2.5], [20, 11.5]]
