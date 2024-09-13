@@ -12,12 +12,42 @@ var config = {
         {
             src: 'images/ems-logo.jpg',
             href: 'https://www.strasbourg.eu/',
-            alt: 'Logo de l’Eurométropole de Strasbourg'
+            alt: 'Logo de l’Eurométropole de Strasbourg',
+            size: {
+                small: 30,   // Logo height for small screens
+                medium: 50,  // Logo height for medium screens
+                large: 70    // Logo height for large screens
+              }
           },
         {
           src: 'images/adeus-logo-seul.svg',
           href: 'https://www.adeus.org/',
-          alt: 'Logo de l’ADEUS'
+          alt: 'Logo de l’ADEUS',
+          size: {
+              small: 30,
+              medium: 50,
+              large: 70
+            }
+        },
+        {
+          src: 'images/logo-comcom-vallee-de-la-bruche.jpg',
+          href: 'https://cc.valleedelabruche.fr/',
+          alt: 'Logo de la Communauté de communes de la Bruche',
+          size: {
+              small: 100,
+              medium: 100,
+              large: 100
+            }
+        },
+        {
+          src: 'images/logo-agglo-saint-die-des-vosges.svg',
+          href: 'https://www.ca-saintdie.fr/',
+          alt: 'Logo de la Communauté d’Agglomération de Saint-Dié-des-Vosges',
+          size: {
+              small: 30,
+              medium: 50,
+              large: 70
+            }
         }
       ],
     chapters: [
