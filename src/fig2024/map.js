@@ -246,6 +246,24 @@ while changing the zoom level, pitch and bearing */
 
 map.on("load", function () {
 
+  // Open the URL in a new tab when clicking on a feature
+  map.on('click', 'office_tourisme', (e) => {
+    const url = e.features[0].properties.website;
+
+    // Open the URL in a new tab
+    window.open(url, '_blank');
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'office_tourisme', () => {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to default when it leaves.
+map.on('mouseleave', 'office_tourisme', () => {
+    map.getCanvas().style.cursor = '';
+});
+
   const targets = {
     'pistecyclable': 'Piste Cyclable'
   };
