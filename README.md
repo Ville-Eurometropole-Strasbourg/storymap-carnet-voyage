@@ -1,4 +1,4 @@
-# SL-CNFIG : site vitrine pour le festival internationnal de la géomatique
+# SL-CNFIG : site vitrine pour le Festival International de Géographie
 
 ## Finalités
 
