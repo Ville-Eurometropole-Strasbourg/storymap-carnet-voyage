@@ -88,7 +88,7 @@ if (config.logos) {
 }
 
 // Optionally, you can add a window resize listener to adjust logo sizes dynamically
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
   var logos = document.querySelectorAll('.logo-container img');
   config.logos.forEach((logo, index) => {
     logos[index].style.height = getLogoSize(logo.size) + 'px';
@@ -157,20 +157,18 @@ config.chapters.forEach((record, idx) => {
     chapter.appendChild(title);
   }
   // Creates the image for the vignette
-  if (record.image) {
+  if (record.images) {
     var image = new Image();
-    image.src = record.image;
-    image.alt = `Illustration : ${record.title}`;
+    image.src = Object.keys(record.images)[0];
+    image.alt = `Illustration : ${Object.values(record.images)[0].alt}`;
     image.setAttribute("onclick", "openLightbox();currentSlide(1)");
     image.classList.add("hover-shadow");
     image.classList.add("cursor");
     chapter.appendChild(image);
-  }
-  // Creates the image credit for the vignette
-  if (record.imageCredit) {
+    // Creates the image credit for the vignette
     var imageCredit = document.createElement('p');
     imageCredit.classList.add('imageCredit');
-    imageCredit.innerHTML = 'Crédit: ' + record.imageCredit;
+    imageCredit.innerHTML = 'Crédit: ' + Object.values(record.images)[0].credit;
     chapter.appendChild(imageCredit);
   }
   // Creates the description for the vignette
@@ -255,17 +253,17 @@ map.on("load", function () {
 
     // Open the URL in a new tab
     window.open(url, '_blank');
-});
+  });
 
-// Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter', 'office_tourisme', () => {
+  // Change the cursor to a pointer when the mouse is over the places layer.
+  map.on('mouseenter', 'office_tourisme', () => {
     map.getCanvas().style.cursor = 'pointer';
-});
+  });
 
-// Change it back to default when it leaves.
-map.on('mouseleave', 'office_tourisme', () => {
+  // Change it back to default when it leaves.
+  map.on('mouseleave', 'office_tourisme', () => {
     map.getCanvas().style.cursor = '';
-});
+  });
 
   const targets = {
     'pistecyclable': 'Piste Cyclable'
