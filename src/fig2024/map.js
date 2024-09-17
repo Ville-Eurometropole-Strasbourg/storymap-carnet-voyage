@@ -161,6 +161,9 @@ config.chapters.forEach((record, idx) => {
     var image = new Image();
     image.src = record.image;
     image.alt = `Illustration : ${record.title}`;
+    image.setAttribute("onclick", "openLightbox();currentSlide(1)");
+    image.classList.add("hover-shadow");
+    image.classList.add("cursor");
     chapter.appendChild(image);
   }
   // Creates the image credit for the vignette
