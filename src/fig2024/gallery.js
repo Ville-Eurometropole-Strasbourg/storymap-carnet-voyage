@@ -1,18 +1,12 @@
-var slidesImg = {
-    "images/01_Fischer.jpg": { "alt": "Fischer" },
-    "images/02_Nextmed.jpg": { "alt": "Nextmed" },
-    "images/03_Holtzheim.jpg": { "alt": "Holtzeim" },
-    "images/04_Entzheim.jpg": { "alt": "Entzheim" }
-};
-
 // Initialize slide index
 var slideIndex = 1;
 
-function openLightbox() {
+function openLightbox(imgParams) {
     document.getElementById("lightbox").style.display = "block";
     // init slides
     var slidesContainer = document.getElementById("slides-container");
     var thumbnails = document.getElementById("thumbnails");
+    var slidesImg = JSON.parse(decodeURIComponent(imgParams))
     // empty divs
     slidesContainer.innerHTML = "";
     thumbnails.innerHTML = "";
@@ -24,6 +18,7 @@ function openLightbox() {
         divSlide.classList.add("step-slides");
         var slide = document.createElement("img");
         slide.src = key;
+        slide.alt = values.alt;
         divSlide.appendChild(slide);
         slidesContainer.appendChild(divSlide);
         // thumbnails

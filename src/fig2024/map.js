@@ -161,7 +161,10 @@ config.chapters.forEach((record, idx) => {
     var image = new Image();
     image.src = Object.keys(record.images)[0];
     image.alt = `Illustration : ${Object.values(record.images)[0].alt}`;
-    image.setAttribute("onclick", "openLightbox();currentSlide(1)");
+    image.setAttribute(
+      "onclick",
+      `openLightbox('${encodeURIComponent(JSON.stringify(record.images))}');currentSlide(1)`
+    );
     image.classList.add("hover-shadow");
     image.classList.add("cursor");
     chapter.appendChild(image);
