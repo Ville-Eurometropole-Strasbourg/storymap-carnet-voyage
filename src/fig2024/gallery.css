@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;  /* it applies to all elements, to review ? */
-}
-
 .thumbnails {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +11,6 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
     overflow: auto;
     background-color: #000000aa;
 }
@@ -75,6 +70,7 @@
 
 .prev:hover,
 .next:hover {
+    color: white;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -83,6 +79,9 @@ img {
 }
 
 .caption-container {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
     text-align: center;
     background-color: black;
     padding: 2px 16px;
