@@ -205,7 +205,7 @@ var config = {
         {
             id: '7',
             title: 'Petites villes de demain',
-            images: { 'images/07_PVD.jpg': { "alt": "07_PVD", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
+            images: { 'images/07_PVD.svg': { "alt": "07_PVD", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
             description: 'Depuis 2021, quatre localités de la Communauté de communes de la Vallée de la Bruche ont adhéré au programme Petites villes de demain : Schirmeck, la Broque, Barembach et Rothau. L’objectif de ce programme est de développer l’attractivité des bourgs-centre et d’améliorer la qualité de vie des habitants. Pendant 10 ans, les communes signataires bénéficient d’une aide financière et technique de l’Etat pour élaborer un projet de territoire visant à apporter un nouveau dynamisme sur le plan économique, social et culturel, et cela dans un souci de revalorisation de l’habitat, de respect du patrimoine et de transition écologique.',
             location: {
                 center: [7.21092, 48.46885],
@@ -229,7 +229,7 @@ var config = {
         {
             id: '9',
             title: 'La Vallée de la Bruche, Capitale de la biodiversité en 2022',
-            images: { 'images/09_CapitaleBio.jpg': { "alt": "09_CapitaleBio", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
+            images: { 'images/09_CapitaleBio.svg': { "alt": "09_CapitaleBio", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
             description: 'Depuis le début des années 1990, la Communauté de communes de la Vallée de la Bruche s’est dotée d’un Plan de paysage, un outil de programmation et de gestion mettant en évidence l’organisation spatiale du territoire, les liens entre les différentes entités paysagères et les ressources potentielles de chaque zone. Les politiques mises en place et les outils pour les appuyer ont porté, ces 30 dernières années, sur divers sujets : travaux de réouverture en fond de vallée, création d’associations foncières pastorales, réseaux de trame verte et bleue, préservation de la biodiversité des prairies, valorisation de la filière bois, démarches de sensibilisation pour le grand public, recomposition du système hydraulique, réhabilitation de friches… En reconnaissance de cette politique volontariste et de ses effets tangibles sur le territoire, la vallée de la Bruche a été désignée « Capitale de la biodiversité 2022 – Paysages et Biodiversité », une distinction décernée par l’Office Français de la Biodiversité.',
             location: {
                 center: [7.2109, 48.4413],
@@ -323,7 +323,7 @@ var config = {
         {
             id: '15',
             title: 'Projet alimentaire territorial et continuité écologique : une mise en valeur des paysages naturels et agricoles',
-            images: { 'images/15_PAT.jpg': { "alt": "15_PAT", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
+            images: { 'images/15_PAT.svg': { "alt": "15_PAT", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
             description: 'La Communauté d’agglomération de Saint-Dié-des-Vosges met en place plusieurs actions visant à préserver et restaurer les milieux naturels et leur biodiversité, incluant l’élaboration d’un inventaire visant à faciliter des travaux de restauration des cours d’eau et zones humides ainsi que le rétablissement de la continuité écologique. Elle pilote également le dispositif Aggl’Eau d’Education à l’Environnement et au Développement Durable à destination des scolaires, et travaille, avec le Conseil Départemental de Meurthe-et-Moselle, sur la préservation de la valeur environnementale de l’Espace Naturel Sensible de la vallée de la Plaine. En outre, la CA gère trois Associations Foncières Pastorales, dont l’objectif est l’ouverture des paysages et le soutien de l’agriculture de montagne. Enfin, avec les deux autres intercommunalités qui forment le PETR du Pays de la Déodatie, elle participe au Projet alimentaire territorial « Cultivons notre alimentation de demain » visant à soutenir la structuration de la filière agricole.',
             location: {
                 center: [6.877449, 48.415047],
@@ -365,7 +365,7 @@ var config = {
         {
             id: '18',
             title: 'Petites villes de demain',
-            images: { 'images/07_PVD.jpg': { "alt": "07_PVD", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
+            images: { 'images/07_PVD.svg': { "alt": "07_PVD", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
             description: 'En octobre 2021, trois communes de la Communauté d’agglomération de Saint-Dié-des-Vosges ont adhéré au programme Petites villes de demain : Raon-l’Etape, Fraize et Plainfaing. L’objectif de ce programme est de développer l’attractivité des bourgs-centre et d’améliorer la qualité de vie des habitants. Pendant 10 ans, les communes signataires bénéficient d’une aide financière et technique de l’Etat pour élaborer un projet de territoire visant à apporter un nouveau dynamisme sur le plan économique, social et culturel, et cela dans un souci de revalorisation de l’habitat, de respect du patrimoine et de transition écologique.',
             location: {
                 center: [6.9894, 48.2818],
