@@ -2,6 +2,7 @@ let protocol = new pmtiles.Protocol();
 maplibregl.addProtocol("pmtiles", protocol.tile);
 
 
+
 /* First, create two variables that will hold:
 1. The different types of layers available to Mapbox and their respective
 opacity attributes
