@@ -90,8 +90,7 @@
     "19_Gare": {
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/19_Gare.geojson"
-    }
-    ,
+    },
     "office_tourisme": {
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/office_tourisme.geojson"
@@ -2117,9 +2116,7 @@
       "id": "office_tourisme",
       "type": "symbol",
       "source": "office_tourisme",
-      "layout": {
-        "icon-image": "services-information⬤"
-    }
+      "layout": {"icon-image": "services-information⬤"}
     },
     {
       "id": "07_PVD",
@@ -3364,7 +3361,8 @@
         "text-field": "{ref}",
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "viewport",
-        "text-size": 10
+        "text-size": 10,
+        "visibility": "none"
       },
       "paint": {}
     },
