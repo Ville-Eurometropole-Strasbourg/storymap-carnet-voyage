@@ -268,20 +268,6 @@ map.on("load", function () {
     map.getCanvas().style.cursor = '';
   });
 
-  const targets = {
-    'pistecyclable': 'Piste Cyclable'
-  };
-
-  map.addControl(new MaplibreLegendControl.MaplibreLegendControl(targets, {
-    title: '\n',
-    showDefault: true,
-    showCheckbox: false,
-    onlyRendered: true,
-    reverseOrder: true
-  }), 'bottom-right');
-
-
-
   // Setup the instance, pass callback functions
   scroller
     .setup({
