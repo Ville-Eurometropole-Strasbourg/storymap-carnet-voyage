@@ -181,7 +181,13 @@ var config = {
         {
             id: '8',
             title: 'La médiathèque de Wisches, la réhabilitation d’une ancienne gare',
-            images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive.webp': { "alt": "08_Locomotive", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
+            images: { 
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive.webp': { "alt": "08_Locomotive", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive/DSC_0772a.jpg': { "alt": "08_Locomotive_1", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive/DSCN4217a.jpg': { "alt": "08_Locomotive_2", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive/DSCN4770a.jpg': { "alt": "08_Locomotive_3", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive/FSCN4343a.jpg': { "alt": "08_Locomotive_4", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' }
+            },
             description: 'La politique paysagère menée par la Communauté de communes de la Vallée de la Bruche a souligné l’importance de la mise en valeur des friches dans les villages. Elles constituent, en effet, une ressource foncière non négligeable pour l’implantation de nouvelles activités, tout en limitant l’étalement urbain ou la disparition des espaces agricoles. Dans cette optique, en 2008, la commune de Wisches rachète à la SNCF l’ancien bâtiment voyageur de la gare, inutilisé depuis les années 1980. Elle inaugure six années plus tard « La Locomotive », un centre culturel composé d’une salle polyvalente accueillant expositions, réunions et activités associatives, ainsi que de logements et d’une nouvelle médiathèque.',
             location: {
                 center: [7.270460, 48.508111],
