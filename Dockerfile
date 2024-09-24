@@ -1,4 +1,4 @@
-FROM harbor.strasbourg.cloud/library/nginx:alpine
+FROM harbor.strasbourg.cloud/dockerhub-proxy/nginx:alpine
 
 ENV appDir /app
 
