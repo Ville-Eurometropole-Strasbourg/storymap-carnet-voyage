@@ -95,6 +95,7 @@ img {
     background-color: white;
     height: 10vh;
     object-fit: scale-down;
+    opacity: 0.6;
 }
 
 .active,
@@ -114,6 +115,10 @@ img.hover-shadow {
     display: none;
 }
 
+.step-slides figure {
+    display: inline-grid;
+}
+
 .step-slides img {
     box-sizing: border-box;
     background-color: white;
@@ -124,4 +129,26 @@ img.hover-shadow {
     margin: auto;
     padding: 5px;
     object-fit: contain;
+}
+
+.step-slides figcaption:before {
+    content: "Crédit: ";
+}
+
+.step-slides figcaption {
+    background-clip: content-box;
+    background-color: #0000005c;
+    color: #fff;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font: italic smaller sans-serif;
+    padding: 5px;
+    text-align: right;
+    position: relative;
+    z-index: 1;
+    margin-top: -25px;
+}
+
+.step-slides a {
+    text-decoration: none;
+    color: white;
 }

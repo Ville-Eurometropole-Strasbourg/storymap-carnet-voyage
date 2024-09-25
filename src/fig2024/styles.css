@@ -98,6 +98,25 @@ body {
   margin-top: -5px;
 }
 
+/* Remove the default triangle */
+#features summary {
+  display: block;
+  cursor: pointer;
+}
+
+/* Create a new custom triangle on the right side */
+#features summary::after {
+  color: #ec1d25;
+  margin-left: 1ch;
+  display: inline-block;
+  content: '➤';
+  transition: 0.2s;
+}
+
+#features details[open] > summary::after {
+  transform: rotate(90deg);
+}
+
 #footer p {
   font-family: 'Atkinson Hyperlegible', sans-serif;
   font-size: 0.9em;
