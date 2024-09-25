@@ -2,7 +2,7 @@
 var slideIndex = 1;
 
 function openLightbox(imgParams) {
-    document.getElementById("lightbox").style.display = "block";
+    document.getElementById("lightbox").style.display = "flex";
     // init slides
     var slidesContainer = document.getElementById("slides-container");
     var thumbnails = document.getElementById("thumbnails");
@@ -16,16 +16,22 @@ function openLightbox(imgParams) {
         // slides
         var divSlide = document.createElement("div");
         divSlide.classList.add("step-slides");
+        var figure = document.createElement("figure");
         var slide = document.createElement("img");
         slide.src = key;
         slide.alt = values.alt;
-        divSlide.appendChild(slide);
+        var credits = document.createElement("figcaption");
+        credits.innerHTML = values.credit + "&nbsp;"
+        figure.appendChild(slide);
+        figure.appendChild(credits);
+        divSlide.appendChild(figure);
         slidesContainer.appendChild(divSlide);
         // thumbnails
         var divThumbnail = document.createElement("div");
         var thumbnail = document.createElement("img");
         thumbnail.src = key;
         thumbnail.alt = values.alt;
+        thumbnail.credit = values.credit;
         thumbnail.classList.add("gallery");
         thumbnail.classList.add("cursor");
         thumbnail.setAttribute("onclick", `currentSlide(${i});`);
