@@ -80,6 +80,40 @@ var config = {
             }
         }
     ],
+    layers: [
+        {
+            layer: '01_Fischer',
+            opacity: 0
+        },
+        {
+            layer: '04_Entzheim',
+            opacity: 0
+        },
+        {
+            layer: '05_Forets',
+            opacity: 0
+        },
+        {
+            layer: '08_Locomotive',
+            opacity: 0
+        },
+        {
+            layer: '07_PVD',
+            opacity: 0
+        },
+        {
+            layer: '13_Eoliennes',
+            opacity: 0
+        },
+        {
+            layer: '18_PVD',
+            opacity: 0
+        },
+        {
+            layer: '19_Gare',
+            opacity: 0
+        }
+    ],
     chapters: [
         {
             id: '0',
@@ -108,40 +142,7 @@ var config = {
                 pitch: 31,
                 bearing: 180
             },
-            onChapterEnter: [
-                {
-                    layer: '01_Fischer',
-                    opacity: 0
-                },
-                {
-                    layer: '04_Entzheim',
-                    opacity: 0
-                },
-                {
-                    layer: '05_Forets',
-                    opacity: 0
-                },
-                {
-                    layer: '08_Locomotive',
-                    opacity: 0
-                },
-                {
-                    layer: '07_PVD',
-                    opacity: 0
-                },
-                {
-                    layer: '13_Eoliennes',
-                    opacity: 0
-                },
-                {
-                    layer: '18_PVD',
-                    opacity: 0
-                },
-                {
-                    layer: '19_Gare',
-                    opacity: 0
-                }
-            ],
+            onChapterEnter: [],
             onChapterExit: []
         },
         {
