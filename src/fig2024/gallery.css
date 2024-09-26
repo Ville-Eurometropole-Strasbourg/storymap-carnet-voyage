@@ -116,6 +116,8 @@ img.hover-shadow {
 
 .step-slides figure {
     display: inline-grid;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .step-slides img {
