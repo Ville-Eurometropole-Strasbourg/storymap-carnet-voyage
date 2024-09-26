@@ -88,7 +88,7 @@ body {
 
 #features p {
   font-family: 'Atkinson Hyperlegible', sans-serif;
-  text-align: left;
+  text-align: justify;
   font-size: 1.2em;
   max-width: 50vw;
 }
