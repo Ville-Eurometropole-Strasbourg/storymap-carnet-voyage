@@ -206,8 +206,8 @@ var footer = document.createElement('div');
 if (config.footer) {
   var footerText = document.createElement('p');
   footerText.innerHTML = '<div>' + config.footer + '</div>' +
-  '<div class="ticket-button ticket"><span class="circle"></span><a>Ticket retour</a></div>'
-  + '<br/><br/>' + config.footerAttribution;
+    '<div class="ticket-button ticket"><span class="circle"></span><a>Ticket retour 1€</a></div>'
+    + '<br/><br/>' + config.footerAttribution;
   footer.appendChild(footerText);
 }
 // If the footer element contains any content, add it to the story
@@ -311,7 +311,7 @@ window.addEventListener('resize', scroller.resize);
 
 // Elevator script included on the page, already.
 
-window.onload = function() {
+window.onload = function () {
   var elevator = new Elevator({
     element: document.querySelector('.ticket-button'),
     duration: 60000, // milliseconds
