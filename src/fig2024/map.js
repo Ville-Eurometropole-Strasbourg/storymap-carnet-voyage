@@ -260,6 +260,12 @@ while changing the zoom level, pitch and bearing */
 
 map.on("load", function () {
 
+  if (config.layers) {
+    config.layers.forEach(lyr => {
+      setLayerOpacity(lyr);
+    });
+  }
+
   // Open the URL in a new tab when clicking on a feature
   map.on('click', 'office_tourisme', (e) => {
     const url = e.features[0].properties.website;
@@ -310,7 +316,6 @@ adjust our scrolling setup */
 window.addEventListener('resize', scroller.resize);
 
 // Elevator script included on the page, already.
-
 window.onload = function () {
   var elevator = new Elevator({
     element: document.querySelector('.ticket-button'),
