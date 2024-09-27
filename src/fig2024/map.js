@@ -319,6 +319,6 @@ window.onload = function () {
     element: document.querySelector('.ticket-button'),
     duration: 60000, // milliseconds
     //mainAudio: '/fig2024/audio/audio.mp3',
-    //endAudio: '/fig2024/audio/end-audio.mp3'
+    endAudio: '/fig2024/sncf.mp3'
   });
 }
