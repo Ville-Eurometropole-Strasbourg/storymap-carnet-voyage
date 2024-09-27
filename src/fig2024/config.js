@@ -460,12 +460,16 @@ var config = {
             id: '16',
             title: 'Les abbayes des Vosges',
             images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/16_Abbayes.webp': { "alt": "L’abbaye de Moyenmoutier", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
-            description: 'Fondées au VII e siècle, les abbayes d’Etival, Moyenmoutier et Senones formaient, avec la cathédrale de Saint-Dié-des-Vosges et l’abbaye aujourd’hui disparue de Bonmoutier, la Sainte-Croix-des-Vosges. Au fil des siècles, elles constituent des lieux de culte, mais aussi d’enseignement, avec l’école de grammaire de Moyenmoutier, et d’activité économique, avec les usines textiles implantées sur le site de l’abbaye de Senones au 19e siècle. Aujourd’hui, cet ensemble religieux et historique s’impose encore dans le paysage, et constitue un attrait touristique et culturel important, entre randonnées, visites guidées et concerts de musique classique, avec le Festival des Abbayes en Lorraine qui fête cette année ses 20 ans.',
+            description: 'Fondées au VII e siècle, les abbayes d’Etival, Moyenmoutier et Senones formaient, avec la cathédrale de Saint-Dié-des-Vosges et l’abbaye aujourd’hui disparue de Bonmoutier, la Sainte-Croix-des-Vosges. Au fil des siècles, elles constituent des lieux de culte, mais aussi d’enseignement, avec l’école de grammaire de Moyenmoutier, et d’activité économique, avec les usines textiles implantées sur le site de l’abbaye de Senones au 19e siècle. Aujourd’hui, cet ensemble religieux et historique s’impose encore dans le paysage, et constitue un attrait touristique et culturel important, entre randonnées, visites guidées et concerts de musique classique, avec le Festival des Abbayes en Lorraine qui fête cette année ses 20 ans.\
+            <br/><br/>\
+            <button onclick="map.flyTo({center: [6.865778, 48.365315], zoom: 17, pitch: 51, bearing: 62.4, speed: 0.6, curve: 0.5})">Abbaye d’Etival</button>\
+            <button onclick="map.flyTo({center: [6.911167, 48.378813], zoom: 17, pitch: 51, bearing: 62.4, speed: 0.6, curve: 0.5})">Abbaye de Moyenmoutier</button>\
+            <button onclick="map.flyTo({center: [6.980758, 48.394445], zoom: 17, pitch: 51, bearing: 62.4, speed: 0.6, curve: 0.5})">Abbaye de Senones</button>',
             location: {
-                center: [6.92179, 48.38175],
-                zoom: 15,
-                pitch: 14,
-                bearing: 19.2
+                center: [6.910432, 48.378593],
+                zoom: 16,
+                pitch: 0,
+                bearing: 48.8
             },
             onChapterEnter: [],
             onChapterExit: []
