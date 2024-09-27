@@ -490,10 +490,10 @@ var config = {
             images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/18_PVD.webp': { "alt": "07_PVD", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
             description: 'En octobre 2021, trois communes de la Communauté d’agglomération de Saint-Dié-des-Vosges ont adhéré au programme Petites villes de demain : Raon-l’Etape, Fraize et Plainfaing. L’objectif de ce programme est de développer l’attractivité des bourgs-centre et d’améliorer la qualité de vie des habitants. Pendant 10 ans, les communes signataires bénéficient d’une aide financière et technique de l’Etat pour élaborer un projet de territoire visant à apporter un nouveau dynamisme sur le plan économique, social et culturel, et cela dans un souci de revalorisation de l’habitat, de respect du patrimoine et de transition écologique.',
             location: {
-                center: [6.9894, 48.2818],
+                center: [7.0028, 48.2301],
                 zoom: 10,
-                pitch: 45,
-                bearing: 20
+                pitch: 26,
+                bearing: -24.8
             },
             onChapterEnter: [
                 {
