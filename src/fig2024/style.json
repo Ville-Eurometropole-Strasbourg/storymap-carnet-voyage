@@ -2148,14 +2148,14 @@
       "id": "07_PVD",
       "type": "line",
       "source": "07_PVD",
-      "paint": {"line-color": "#ff0000", "line-width": 2, "line-opacity": 0.6},
+      "paint": {"line-color": "#1870d5", "line-width": 2, "line-opacity": 0.6},
       "opacity": 0
     },
     {
       "id": "18_PVD",
       "type": "line",
       "source": "18_PVD",
-      "paint": {"line-color": "#ff0000", "line-width": 2, "line-opacity": 0.6},
+      "paint": {"line-color": "#1870d5", "line-width": 2, "line-opacity": 0.6},
       "opacity": 0
     },
     {
