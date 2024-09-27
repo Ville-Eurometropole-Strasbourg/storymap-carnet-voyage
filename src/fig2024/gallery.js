@@ -76,7 +76,8 @@ function showSlides(n) {
     }
 
     // Show the current slide and add active class to the current dot
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.display = "flex";
+    slides[slideIndex - 1].style.justifyContent = "center";
     gallery[slideIndex - 1].className += " active";
     captionText.innerHTML = gallery[slideIndex - 1].alt;
 }
