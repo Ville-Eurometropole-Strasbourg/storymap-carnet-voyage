@@ -205,9 +205,7 @@ var footer = document.createElement('div');
 // This assigns all the content to the footer element
 if (config.footer) {
   var footerText = document.createElement('p');
-  footerText.innerHTML = '<div>' + config.footer + '</div>' +
-    '<div class="ticket-button ticket"><span class="circle"></span><a>Ticket retour 1€</a></div>'
-    + '<br/><br/>' + config.footerAttribution;
+  footerText.innerHTML = config.footer + '<br/><br/>' + config.footerAttribution;
   footer.appendChild(footerText);
 }
 // If the footer element contains any content, add it to the story
