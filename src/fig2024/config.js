@@ -20,16 +20,6 @@ var config = {
             }
         },
         {
-            src: 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/adeus-logo.svg',
-            href: 'https://www.adeus.org/',
-            alt: 'Logo de l’ADEUS',
-            size: {
-                small: 30,
-                medium: 50,
-                large: 70
-            }
-        },
-        {
             src: 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/logo-comcom-vallee-de-la-bruche.jpg',
             href: 'https://cc.valleedelabruche.fr/',
             alt: 'Logo de la Communauté de communes de la Bruche',
@@ -43,16 +33,6 @@ var config = {
             src: 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/logo-agglo-saint-die-des-vosges.svg',
             href: 'https://www.ca-saintdie.fr/',
             alt: 'Logo de la Communauté d’Agglomération de Saint-Dié-des-Vosges',
-            size: {
-                small: 100,
-                medium: 100,
-                large: 100
-            }
-        },
-        {
-            src: 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/logo-fig.png',
-            href: 'https://fig.saint-die-des-vosges.fr/',
-            alt: 'Logo du Festival international de géographie',
             size: {
                 small: 100,
                 medium: 100,
@@ -77,6 +57,26 @@ var config = {
                 small: 100,
                 medium: 100,
                 large: 100
+            }
+        },
+        {
+            src: 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/logo-fig.png',
+            href: 'https://fig.saint-die-des-vosges.fr/',
+            alt: 'Logo du Festival international de géographie',
+            size: {
+                small: 100,
+                medium: 100,
+                large: 100
+            }
+        },
+        {
+            src: 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/adeus-logo.svg',
+            href: 'https://www.adeus.org/',
+            alt: 'Logo de l’ADEUS',
+            size: {
+                small: 30,
+                medium: 50,
+                large: 70
             }
         }
     ],
