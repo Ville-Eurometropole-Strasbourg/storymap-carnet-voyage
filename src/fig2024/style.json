@@ -33,63 +33,71 @@
     },
     "openmaptiles": {
       "type": "vector",
-      "url": "pmtiles://assets/strasbourg-a-st-die.pmtiles"
+      "url": "pmtiles://https://sig.strasbourg.eu/datastrasbourg/fig2024/strasbourg-a-st-die.pmtiles"
     },
     "pistecyclable": {
       "type": "geojson",
-      "data": "assets/piste_cyclable_strasbourg_st_die.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/piste_cyclable_strasbourg_st_die.geojson"
     },
     "bruche": {
       "type": "geojson",
-      "data": "assets/bruche.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/bruche.geojson"
     },
     "voieferree": {
       "type": "geojson",
-      "data": "assets/ligne_strasbourg_st_die.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/ligne_strasbourg_st_die.geojson"
     },
     "01_Fischer": {
       "type": "geojson",
-      "data": "assets/01_Fischer.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/01_Fischer.geojson"
     },
     "02_Nextmed": {
       "type": "geojson",
-      "data": "assets/02_Nextmed.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/02_Nextmed.geojson"
     },
     "04_Entzheim": {
       "type": "geojson",
-      "data": "assets/04_Entzheim.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/04_Entzheim.geojson"
     },
     "05_Forets": {
       "type": "geojson",
-      "data": "assets/05_Forets.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/05_Forets.geojson"
     },
     "06_Scheidecker": {
       "type": "geojson",
-      "data": "assets/06_Scheidecker.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/06_Scheidecker.geojson"
     },
     "06_Scheidecker_cheminee": {
       "type": "geojson",
-      "data": "assets/06_Scheidecker_cheminee.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/06_Scheidecker_cheminee.geojson"
     },
     "07_PVD": {
       "type": "geojson",
-      "data": "assets/07_PVD.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/07_PVD.geojson"
     },
     "08_Locomotive": {
       "type": "geojson",
-      "data": "assets/08_Locomotive.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/08_Locomotive.geojson"
     },
     "13_Eoliennes": {
       "type": "geojson",
-      "data": "assets/13_Eoliennes.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/13_Eoliennes.geojson"
+    },
+    "16_Abbayes": {
+      "type": "geojson",
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/16_Abbayes.geojson"
     },
     "18_PVD": {
       "type": "geojson",
-      "data": "assets/18_PVD.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/18_PVD.geojson"
     },
     "19_Gare": {
       "type": "geojson",
-      "data": "assets/19_Gare.geojson"
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/19_Gare.geojson"
+    },
+    "office_tourisme": {
+      "type": "geojson",
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/office_tourisme.geojson"
     }
   },
   "sprite": "https://vecto.teritorio.xyz/styles/teritorio-tourism-latest/sprite",
@@ -769,6 +777,18 @@
       "id": "08_Locomotive",
       "type": "fill-extrusion",
       "source": "08_Locomotive",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "16_Abbayes",
+      "type": "fill-extrusion",
+      "source": "16_Abbayes",
       "minzoom": 14,
       "paint": {
         "fill-extrusion-color": "rgba(193, 188, 181, 1)",
@@ -3351,7 +3371,8 @@
         "text-field": "{ref}",
         "text-font": ["Noto Sans Regular"],
         "text-rotation-alignment": "viewport",
-        "text-size": 10
+        "text-size": 10,
+        "visibility": "none"
       },
       "paint": {}
     },
@@ -4264,6 +4285,12 @@
         "text-halo-width": 1,
         "text-opacity": 0.7
       }
+    },
+    {
+      "id": "office_tourisme",
+      "type": "symbol",
+      "source": "office_tourisme",
+      "layout": {"icon-image": "services-information⬤"}
     }
   ],
   "id": "7mjj2r2"
