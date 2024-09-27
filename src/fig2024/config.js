@@ -224,7 +224,8 @@ var config = {
         {
             id: '5',
             title: 'Les paysages forestiers, un atout économique pour la filière bois',
-            images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets.webp': { "alt": "05_Forets", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
+            images: {
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets.webp': { "alt": "05_Forets", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/_8PB2636.jpg': { "alt": "05_Forets", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/_8PB2694.jpg': { "alt": "05_Forets", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/_8PB5921.jpg': { "alt": "05_Forets", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
@@ -325,7 +326,8 @@ var config = {
         {
             id: '9',
             title: 'La Vallée de la Bruche, Capitale Française de la Biodiversité en 2022 - Paysage et Biodiversité',
-            images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio.webp': { "alt": "09_CapitaleBio", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
+            images: {
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio.webp': { "alt": "09_CapitaleBio", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio/03-1.jpg': { "alt": "09_CapitaleBio", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio/16.jpg': { "alt": "09_CapitaleBio", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio/17.jpg': { "alt": "09_CapitaleBio", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
@@ -333,11 +335,11 @@ var config = {
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio/Barembach2.JPG': { "alt": "09_CapitaleBio", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio/Belmont-Bellefosse-ccvb.jpg': { "alt": "09_CapitaleBio", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio/Blancherupt_3920-24_cllc.jpg': { "alt": "09_CapitaleBio", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
-                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio/CC_Bruche_logo-CFB-2022.jpg': { "alt": "09_CapitaleBio", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio/Clairière du hang-ccvb-2020.jpg': { "alt": "09_CapitaleBio", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio/La Broque1.JPG': { "alt": "09_CapitaleBio", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio/Saulxures.JPG': { "alt": "09_CapitaleBio", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio/Wildersbach2.JPG': { "alt": "09_CapitaleBio", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/09_CapitaleBio/CC_Bruche_logo-CFB-2022.jpg': { "alt": "09_CapitaleBio", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
             },
             description: 'Depuis le début des années 1990, la Communauté de communes de la Vallée de la Bruche s’est dotée d’un Plan de paysage, un outil de programmation et de gestion mettant en évidence l’organisation spatiale du territoire, les liens entre les différentes entités paysagères et les ressources potentielles de chaque zone. Les politiques mises en place et les outils pour les appuyer ont porté, ces 30 dernières années, sur divers sujets : travaux de réouverture en fond de vallée, création d’associations foncières pastorales, soutien à l’agriculture extensive de montagne, concilier démarche paysagère et fonctionnalité des milieux (réseaux de trame verte et bleue), préservation de la biodiversité des milieux pastoraux (landes, coteaux, fonds de vallées), valorisation de la filière bois, démarches de sensibilisation pour le grand public, recomposition du système hydraulique, réhabilitation de friches… En reconnaissance de cette politique volontariste et de ses effets tangibles sur le territoire, la vallée de la Bruche a été désignée « Capitale Française de la Biodiversité 2022 – Paysages et Biodiversité », une distinction décernée par l’Office Français de la Biodiversité.',
             location: {
@@ -352,7 +354,8 @@ var config = {
         {
             id: '10',
             title: 'Les points de lecture du paysage',
-            images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/10_PointLecture.webp': { "alt": "10_PointLecture", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
+            images: {
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/10_PointLecture.webp': { "alt": "10_PointLecture", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/10_PointLecture/7947.jpg': { "alt": "10_PointLecture", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/10_PointLecture/bruche  316.jpg': { "alt": "10_PointLecture", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/10_PointLecture/DSC03189.JPG': { "alt": "10_PointLecture", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
@@ -372,7 +375,8 @@ var config = {
         {
             id: '11',
             title: 'La Bruche, un atout majeur du paysage',
-            images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/11_Bruche.webp': { "alt": "11_Bruche", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
+            images: {
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/11_Bruche.webp': { "alt": "11_Bruche", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/11_Bruche/bruche_pecheur_001.jpg': { "alt": "11_Bruche", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/11_Bruche/BRUCHE-111.jpg': { "alt": "11_Bruche", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/11_Bruche/rothau_006.jpg': { "alt": "11_Bruche", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' }
