@@ -6,7 +6,7 @@ var config = {
     title: 'Préserver les ressources et les paysages',
     //byline: 'By',
     description: 'Le 5 octobre 2019, l’Eurométropole de Strasbourg, la Communauté de communes de la Vallée de la Bruche et la Communauté d’agglomération de Saint-Dié-des-Vosges signaient un Contrat de réciprocité liant ces trois territoires. <br/>Son objectif : construire des accords stratégiques entre territoires urbains et montagnards et mettre en commun leurs atouts et ressources propres. Parmi les projets phares portés par ce Contrat figure une meilleure visibilité et accessibilité du Festival de géographie de Saint-Dié-des-Vosges (FIG) pour les habitants de l’Eurométropole. Dans cette optique, les visiteurs du FIG bénéficient désormais d’un billet de train retour à 1€ pour toutes les gares de la ligne jusqu’à Strasbourg. <br/>Pour fêter les 5 ans du Contrat de réciprocité et poursuivre les discussions déjà engagées, les conseillers municipaux des trois territoires ont été invités à emprunter cette ligne à l’occasion de l’édition 2024 du FIG. Pour accompagner leur trajet, un carnet de voyage (<a href="https://sig.strasbourg.eu/datastrasbourg/fig2024/maquette-Carnet-4-volets.pdf">lien vers la version numérique du carnet papier</a>) soulignant les ressources et paysages qui marquent ce trajet leur a été distribué. Cette version web du carnet de voyage permet d’en apprendre plus sur ces divers éléments.',
-    footer: 'Travail réalisé dans le cadre du Festival International de Géographie 2024 à Saint-Dié-des-Vosges',
+    footer: 'Travail réalisé dans le cadre du Festival International de Géographie 2024 à Saint-Dié-des-Vosges<br/><div class="ticket-button ticket"><span class="circle"></span><a>Ticket retour 1€</a></div>',
     footerAttribution: '<a href="https://sig.strasbourg.eu/" target="_blank">Service Géomatique et Connaissance du Territoire - Eurométropole de Strasbourg</a> | <a href="https://www.strasbourg.eu/mentions-legales" target="_blank">Mentions légales</a>',
     logos: [
         {
@@ -25,8 +25,8 @@ var config = {
             alt: 'Logo de la Communauté de communes de la Bruche',
             size: {
                 small: 100,
-                medium: 100,
-                large: 100
+                medium: 130,
+                large: 150
             }
         },
         {
@@ -35,8 +35,8 @@ var config = {
             alt: 'Logo de la Communauté d’Agglomération de Saint-Dié-des-Vosges',
             size: {
                 small: 100,
-                medium: 100,
-                large: 100
+                medium: 130,
+                large: 150
             }
         },
         {
@@ -44,9 +44,9 @@ var config = {
             href: 'https://www.grandest.fr/',
             alt: 'Logo de la région Grand Est',
             size: {
-                small: 100,
-                medium: 100,
-                large: 100
+                small: 30,
+                medium: 50,
+                large: 70
             }
         },
         {
@@ -54,9 +54,9 @@ var config = {
             href: 'https://www.sncf-reseau.com/',
             alt: 'Logo de la société nationale des chemins de fer français',
             size: {
-                small: 100,
-                medium: 100,
-                large: 100
+                small: 30,
+                medium: 50,
+                large: 70
             }
         },
         {
