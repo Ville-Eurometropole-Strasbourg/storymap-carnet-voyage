@@ -224,7 +224,16 @@ var config = {
         {
             id: '5',
             title: 'Les paysages forestiers, un atout économique pour la filière bois',
-            images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets.webp': { "alt": "05_Forets", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
+            images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets.webp': { "alt": "05_Forets", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/_8PB2636.jpg': { "alt": "05_Forets", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/_8PB2694.jpg': { "alt": "05_Forets", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/_8PB5921.jpg': { "alt": "05_Forets", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/_8PB6134.jpg': { "alt": "05_Forets", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/DSC04522 2.JPG': { "alt": "05_Forets", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/Noll_chaume_01072013 (12).JPG': { "alt": "05_Forets", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/Pano 5.jpg': { "alt": "05_Forets", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/w17a_cllc.jpg': { "alt": "05_Forets", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' }
+            },
             description: 'Dans la Vallée de la Bruche, la forêt occupe près de 80% du territoire et bénéficie d’une gestion très majoritairement publique. Avec la remise en cause de la monoculture forestière et la prise en compte de son importance face aux enjeux climatiques, la forêt a repris une place de taille dans les politiques engagées par la Communauté de communes. En 2016, elle a mené une vaste réflexion sur la forêt et le bois avec l’ensemble des acteurs concernés. Celle-ci a mené à l’adoption, en 2021, d’une Stratégie filière forêt-bois, qui propose un programme d’actions portant sur une gestion durable de la forêt, la mise en place de politiques d’utilisation du matériau bois dans la maîtrise d’ouvrage publique, ainsi que la sensibilisation et l’accueil du public (Evènement de Mai 2022- Le printemps de la Forêt).',
             location: {
                 center: [7.331572, 48.52629],
