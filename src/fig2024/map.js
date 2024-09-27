@@ -88,7 +88,7 @@ if (config.logos) {
 }
 
 // Optionally, you can add a window resize listener to adjust logo sizes dynamically
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
   var logos = document.querySelectorAll('.logo-container img');
   config.logos.forEach((logo, index) => {
     logos[index].style.height = getLogoSize(logo.size) + 'px';
@@ -157,17 +157,21 @@ config.chapters.forEach((record, idx) => {
     chapter.appendChild(title);
   }
   // Creates the image for the vignette
-  if (record.image) {
+  if (record.images) {
     var image = new Image();
-    image.src = record.image;
-    image.alt = `Illustration : ${record.title}`;
+    image.src = Object.keys(record.images)[0];
+    image.alt = `Illustration : ${Object.values(record.images)[0].alt}`;
+    image.setAttribute(
+      "onclick",
+      `openLightbox('${encodeURIComponent(JSON.stringify(record.images))}');currentSlide(1)`
+    );
+    image.classList.add("hover-shadow");
+    image.classList.add("cursor");
     chapter.appendChild(image);
-  }
-  // Creates the image credit for the vignette
-  if (record.imageCredit) {
+    // Creates the image credit for the vignette
     var imageCredit = document.createElement('p');
     imageCredit.classList.add('imageCredit');
-    imageCredit.innerHTML = 'Crédit: ' + record.imageCredit;
+    imageCredit.innerHTML = 'Crédit: ' + Object.values(record.images)[0].credit;
     chapter.appendChild(imageCredit);
   }
   // Creates the description for the vignette
@@ -200,7 +204,9 @@ var footer = document.createElement('div');
 // This assigns all the content to the footer element
 if (config.footer) {
   var footerText = document.createElement('p');
-  footerText.innerHTML = config.footer + '<br>' + config.footerAttribution;
+  footerText.innerHTML = '<div>' + config.footer + '</div>' +
+    '<div class="ticket-button ticket"><span class="circle"></span><a>Ticket retour 1€</a></div>'
+    + '<br/><br/>' + config.footerAttribution;
   footer.appendChild(footerText);
 }
 // If the footer element contains any content, add it to the story
@@ -226,7 +232,14 @@ var map = new maplibregl.Map({
 });
 
 map.addControl(new maplibregl.AttributionControl({
-  customAttribution: '<a href="https://www.openstreetmap.org/">📦</a> <b>données</b> par <a href="https://www.openstreetmap.org/copyright"><b>©️ les contributeurs & contributrices OpenStreetMap</b></a><br/><a href="https://github.com/teritrio/teritorio-tourism-gl-style/blob/master/LICENSE.md">🗺️</a> <b>fond de carte</b> par <a href="https://www.teritorio.fr">Teritorio</a> avec le schéma <a href="https://openmaptiles.org/"><b>OpenMapTiles</b></a> <a href="https://maplibre.org/maplibre-gl-js/docs/">🚀</a> <b>affichage</b> de cartes par <a href="https://maplibre.org/maplibre-gl-js/docs/"><b>MapLibre</b></a>'
+  customAttribution: '🟪 Piste Cyclable ⬛ Voie ferrée <br/><br/>\
+  <a href="https://www.openstreetmap.org/">📦</a> <b>données</b> par <a href="https://www.openstreetmap.org/copyright">\
+  <b>©️ les contributeurs & contributrices OpenStreetMap</b></a><br/>\
+  <a href="https://github.com/teritrio/teritorio-tourism-gl-style/blob/master/LICENSE.md">🗺️</a> \
+  <b>fond de carte</b> par <a href="https://www.teritorio.fr">Teritorio</a> \
+  avec le schéma <a href="https://openmaptiles.org/"><b>OpenMapTiles</b></a> \
+  <a href="https://maplibre.org/maplibre-gl-js/docs/">🚀</a> \
+  <b>affichage</b> de cartes par <a href="https://maplibre.org/maplibre-gl-js/docs/"><b>MapLibre</b></a>'
 }));
 
 map.addControl(
@@ -246,19 +259,29 @@ while changing the zoom level, pitch and bearing */
 
 map.on("load", function () {
 
-  const targets = {
-    'pistecyclable': 'Piste Cyclable'
-  };
+  if (config.layers) {
+    config.layers.forEach(lyr => {
+      setLayerOpacity(lyr);
+    });
+  }
 
-  map.addControl(new MaplibreLegendControl.MaplibreLegendControl(targets, {
-    title: '\n',
-    showDefault: true,
-    showCheckbox: false,
-    onlyRendered: true,
-    reverseOrder: true
-  }), 'bottom-right');
+  // Open the URL in a new tab when clicking on a feature
+  map.on('click', 'office_tourisme', (e) => {
+    const url = e.features[0].properties.website;
 
+    // Open the URL in a new tab
+    window.open(url, '_blank');
+  });
 
+  // Change the cursor to a pointer when the mouse is over the places layer.
+  map.on('mouseenter', 'office_tourisme', () => {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+
+  // Change it back to default when it leaves.
+  map.on('mouseleave', 'office_tourisme', () => {
+    map.getCanvas().style.cursor = '';
+  });
 
   // Setup the instance, pass callback functions
   scroller
@@ -290,3 +313,13 @@ map.on("load", function () {
 /* Here we watch for any resizing of the screen to
 adjust our scrolling setup */
 window.addEventListener('resize', scroller.resize);
+
+// Elevator script included on the page, already.
+window.onload = function () {
+  var elevator = new Elevator({
+    element: document.querySelector('.ticket-button'),
+    duration: 60000, // milliseconds
+    //mainAudio: '/fig2024/audio/audio.mp3',
+    //endAudio: '/fig2024/audio/end-audio.mp3'
+  });
+}
