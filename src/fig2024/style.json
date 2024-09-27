@@ -87,6 +87,10 @@
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/16_Abbayes.geojson"
     },
+    "17_Anoud": {
+      "type": "geojson",
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/17_Anoud.geojson"
+    },
     "18_PVD": {
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/18_PVD.geojson"
@@ -789,6 +793,18 @@
       "id": "16_Abbayes",
       "type": "fill-extrusion",
       "source": "16_Abbayes",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "17_Anoud",
+      "type": "fill-extrusion",
+      "source": "17_Anoud",
       "minzoom": 14,
       "paint": {
         "fill-extrusion-color": "rgba(193, 188, 181, 1)",
