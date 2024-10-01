@@ -102,6 +102,10 @@
     "office_tourisme": {
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/office_tourisme.geojson"
+    },
+    "03_Holtzheim": {
+      "type": "geojson",
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/03_Holtzheim.geojson"
     }
   },
   "sprite": "https://vecto.teritorio.xyz/styles/teritorio-tourism-latest/sprite",
@@ -2292,7 +2296,15 @@
       "id": "voieferree",
       "type": "line",
       "source": "voieferree",
+      "layout": {"visibility": "visible"},
       "paint": {"line-width": 3, "line-color": "rgba(107, 95, 95, 1)"}
+    },
+    {
+      "id": "03_Holtzheim",
+      "type": "line",
+      "source": "03_Holtzheim",
+      "paint": {"line-color": "#1870d5", "line-width": 2, "line-opacity": 0.6},
+      "opacity": 0
     },
     {
       "id": "bridge-motorway-link-casing",
