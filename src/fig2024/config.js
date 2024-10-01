@@ -102,10 +102,6 @@ var config = {
             opacity: 0
         },
         {
-            layer: '13_Eoliennes',
-            opacity: 0
-        },
-        {
             layer: '18_PVD',
             opacity: 0
         },
@@ -410,23 +406,13 @@ var config = {
             images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/13_Eoliennes.webp': { "alt": "13_Eoliennes.svg", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
             description: 'Les parcs éoliens qui composent le paysage vosgien témoignent de l’engagement des collectivités du territoire dans le domaine de la transition énergétique. Depuis les années 1990, la Communauté de communes de la Vallée de la Bruche s’engage ainsi dans une démarche paysagère prônant notamment la préservation de la forêt et la valorisation du bois-énergie. Adopté en 2022 par le PETR Bruche Mossig, le Plan climat s’appuie également sur le développement de nouvelles sources d’énergie verte, telles que le photovoltaïque ou le biogaz. Depuis 2015, la Communauté d’agglomération de Saint-Dié-des-Vosges dispose, avec les autres intercommunalités du PETR de la Déodatie, d’une Maison de l’Habitat et de l’Energie, qui vise à accompagner les particuliers, les entreprises, les hébergeurs et les collectivités dans les projets de rénovation énergétique et d’amélioration du bâti. En 2023, la Communauté d’agglomération a également amorcé une démarche d’élaboration d’un Plan climat pour 2026-2031.',
             location: {
-                center: [7.077058, 48.351695],
-                zoom: 13,
-                pitch: 45,
-                bearing: 20
+                center: [7.055473, 48.357571],
+                zoom: 16,
+                pitch: 60,
+                bearing: -62.4
             },
-            onChapterEnter: [
-                {
-                    layer: '13_Eoliennes',
-                    opacity: 1
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: '13_Eoliennes',
-                    opacity: 0
-                }
-            ]
+            onChapterEnter: [],
+            onChapterExit: []
         },
         {
             id: '14',

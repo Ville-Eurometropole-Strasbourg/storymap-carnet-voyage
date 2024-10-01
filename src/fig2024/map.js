@@ -254,14 +254,31 @@ var scroller = scrollama();
 tutorial. At the end, however, we setup the functions that will tie the
 scrolling to the chapters and move the map from one location to another
 while changing the zoom level, pitch and bearing */
-
-map.on("load", function () {
+map.on('load', async () => {
 
   if (config.layers) {
     config.layers.forEach(lyr => {
       setLayerOpacity(lyr);
     });
   }
+
+  image = await map.loadImage('https://sig.strasbourg.eu/datastrasbourg/fig2024/images/wind_turbine_2076.png');
+  map.addImage('windturbine', image.data);
+  map.addSource('point', {
+    'type': 'geojson',
+    'data': 'https://sig.strasbourg.eu/datastrasbourg/fig2024/13_Eoliennes.geojson'
+  });
+
+  map.addLayer({
+    'id': 'points',
+    'type': 'symbol',
+    'source': 'point',
+    'layout': {
+      'icon-image': 'windturbine',
+      'icon-allow-overlap': true,
+      'icon-size': ['interpolate', ['linear'], ['zoom'], 10, 0.001, 14, 0.08, 15, 0.1, 18, 0.8, 20, 4, 22, 12]
+    }
+  });
 
   // Open the URL in a new tab when clicking on a feature
   map.on('click', 'office_tourisme', (e) => {
