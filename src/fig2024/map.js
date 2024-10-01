@@ -231,8 +231,7 @@ var map = new maplibregl.Map({
 });
 
 map.addControl(new maplibregl.AttributionControl({
-  customAttribution: '🟪 Piste Cyclable ⬛ Voie ferrée <br/><br/>\
-  <a href="https://www.openstreetmap.org/">📦</a> <b>données</b> par <a href="https://www.openstreetmap.org/copyright">\
+  customAttribution: '<a href="https://www.openstreetmap.org/">📦</a> <b>données</b> par <a href="https://www.openstreetmap.org/copyright">\
   <b>©️ les contributeurs & contributrices OpenStreetMap</b></a><br/>\
   <a href="https://github.com/teritrio/teritorio-tourism-gl-style/blob/master/LICENSE.md">🗺️</a> \
   <b>fond de carte</b> par <a href="https://www.teritorio.fr">Teritorio</a> \
@@ -312,6 +311,18 @@ map.on("load", function () {
 /* Here we watch for any resizing of the screen to
 adjust our scrolling setup */
 window.addEventListener('resize', scroller.resize);
+
+// Legend Menu
+let legendMenu = document.querySelector(".legend");
+let legendButton = document.querySelector(".legend__button");
+
+toggleLegendMenu = () => {
+  legendMenu.classList.toggle("open");
+}
+
+legendButton.addEventListener("click", function () {
+  toggleLegendMenu();
+});
 
 // Elevator script included on the page, already.
 window.onload = function () {
