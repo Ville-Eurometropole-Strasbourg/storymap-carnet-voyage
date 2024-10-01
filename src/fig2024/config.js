@@ -273,8 +273,8 @@ var config = {
             id: '8',
             title: 'La médiathèque de Wisches, la réhabilitation d’une ancienne gare',
             images: {
-                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive.webp': { "alt": "08_Locomotive", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
-                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive/DSC_0772a.webp': { "alt": "08_Locomotive_1", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive.webp': { "alt": "La médiathèque de Wisches, la réhabilitation d’une ancienne gare", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive/DSC_0772a.webp': { "alt": "La gare avant sa valorisation", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive/DSCN4217a.webp': { "alt": "08_Locomotive_2", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive/DSCN4770a.webp': { "alt": "08_Locomotive_3", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/08_Locomotive/FSCN4343a.webp': { "alt": "08_Locomotive_4", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' }
