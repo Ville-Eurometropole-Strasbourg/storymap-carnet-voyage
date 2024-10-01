@@ -502,12 +502,15 @@ var config = {
             id: '19',
             title: 'Des pôles d’échange multimodaux',
             images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/19_Gare.webp': { "alt": "La gare de Saint-Dié-des-Vosges, un pôle d’échange multimodal", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
-            description: 'Ces dernières années, deux pôles d’échange multimodaux ont été inaugurés dans la Communauté d’agglomération de Saint-Dié-des-Vosges. La gare de Saint-Dié-des-Vosges en 2023, et celle de Raon-l’Etape en 2024, ont ainsi bénéficié de travaux d’envergure visant à revaloriser leur image et à faciliter l’intermodalité. Avec l’aménagement de bornes de recharge électrique, de quais de bus adaptés aux personnes à mobilité réduite, de dépose-minute, de pistes cyclables et de locaux à vélo sécurisés, ces nouveaux aménagements facilitent l’accès à des mobilités douces pour l’ensemble des habitants.',
+            description: 'Ces dernières années, deux pôles d’échange multimodaux ont été inaugurés dans la Communauté d’agglomération de Saint-Dié-des-Vosges. La gare de Saint-Dié-des-Vosges en 2023, et celle de Raon-l’Etape en 2024, ont ainsi bénéficié de travaux d’envergure visant à revaloriser leur image et à faciliter l’intermodalité. Avec l’aménagement de bornes de recharge électrique, de quais de bus adaptés aux personnes à mobilité réduite, de dépose-minute, de pistes cyclables et de locaux à vélo sécurisés, ces nouveaux aménagements facilitent l’accès à des mobilités douces pour l’ensemble des habitants.\
+            <br/><br/>\
+            <button onclick="map.flyTo({center: [6.949115, 48.281816], zoom: 17, pitch: 52, bearing: -130.3, speed: 1, curve: 1})">Gare de Saint-Dié-des-Vosges</button>\
+            <button onclick="map.flyTo({center: [6.837106, 48.40372], zoom: 17, pitch: 43, bearing: -116, speed: 1, curve: 1})">Gare de Raon-l’Étape</button>',
             location: {
-                center: [6.948121, 48.281898],
+                center: [6.94717, 48.28403],
                 zoom: 15,
-                pitch: 20,
-                bearing: 45
+                pitch: 35,
+                bearing: 0
             },
             onChapterEnter: [
                 {
