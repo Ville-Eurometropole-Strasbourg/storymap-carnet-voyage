@@ -9,25 +9,42 @@
         content="Faites défiler l'histoire vers le bas et la carte montrera l'emplacement de l'étape." />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png" />
-    <script src="../vendor/pmtiles.2.11.0.js"></script>
-    <script src="../vendor/maplibre-gl.3.6.2.js"></script>
-    <link href="../vendor/maplibre-gl.3.6.2.css" rel="stylesheet" />
-    <script src="../vendor/intersection-observer.0.5.1.js"></script>
-    <script src="../vendor/scrollama.3.2.0.js"></script>
-    <script src="https://tholman.com/elevator.js/elevator.js"></script>
-    <script defer src="gallery.js"></script>
+    <script src="../vendor/pmtiles.3.0.6.js"></script>
+    <script type='text/javascript' src='../vendor/maplibre-gl.4.7.1.js'></script>
+    <link rel='stylesheet' href='../vendor/maplibre-gl.4.7.1.css' />
+    <script type='text/javascript' src="../vendor/intersection-observer.0.5.1.js"></script>
+    <script type='text/javascript' src="../vendor/scrollama.3.2.0.js"></script>
+    <script type='text/javascript' src="../vendor/elevator.min.js"></script>
+    <script type='text/javascript' defer src="gallery.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="legend.css">
     <link rel="stylesheet" href="tickets.css">
 </head>
 
 <body>
-    <div id='map'></div>
+    <div id='map'>
+        <div class="legend">
+            <div class="legend__button">+</div>
+            <div class="legend__content">
+                <h3 class="legend__title">Légende</h4>
+                    <ul class="legend__content__list list-group">
+                        <li class="list-group-item legend-bike">
+                            <div>Piste cyclable</div>
+                        </li>
+                        <li class="list-group-item legend-train">
+                            <div>Voie ferrée</div>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
     <div id='story'>
-        <script src='config.js'></script>
+        <script type='text/javascript' src='config.js'></script>
         <script type='text/javascript' src="map.js"></script>
         <div id="lightbox" class="lightbox">
             <span class="close cursor" onclick="closeLightbox()">&times;</span>
