@@ -93,7 +93,8 @@ img {
 .gallery {
     background-color: white;
     height: 10vh;
-    object-fit: scale-down;
+    max-width: 80px;
+    object-fit: cover;
     opacity: 0.6;
 }
 
