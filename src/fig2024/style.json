@@ -79,13 +79,13 @@
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/08_Locomotive.geojson"
     },
-    "13_Eoliennes": {
-      "type": "geojson",
-      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/13_Eoliennes.geojson"
-    },
     "16_Abbayes": {
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/16_Abbayes.geojson"
+    },
+    "17_Anoud": {
+      "type": "geojson",
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/17_Anoud.geojson"
     },
     "18_PVD": {
       "type": "geojson",
@@ -98,6 +98,14 @@
     "office_tourisme": {
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/office_tourisme.geojson"
+    },
+    "03_Holtzheim": {
+      "type": "geojson",
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/03_Holtzheim.geojson"
+    },
+    "10_PointLecture": {
+      "type": "geojson",
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/10_PointLecture.geojson"
     }
   },
   "sprite": "https://vecto.teritorio.xyz/styles/teritorio-tourism-latest/sprite",
@@ -789,6 +797,18 @@
       "id": "16_Abbayes",
       "type": "fill-extrusion",
       "source": "16_Abbayes",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "17_Anoud",
+      "type": "fill-extrusion",
+      "source": "17_Anoud",
       "minzoom": 14,
       "paint": {
         "fill-extrusion-color": "rgba(193, 188, 181, 1)",
@@ -2132,21 +2152,14 @@
       "id": "07_PVD",
       "type": "line",
       "source": "07_PVD",
-      "paint": {"line-color": "#ff0000", "line-width": 2, "line-opacity": 0.6},
+      "paint": {"line-color": "#1870d5", "line-width": 2, "line-opacity": 0.6},
       "opacity": 0
     },
     {
       "id": "18_PVD",
       "type": "line",
       "source": "18_PVD",
-      "paint": {"line-color": "#ff0000", "line-width": 2, "line-opacity": 0.6},
-      "opacity": 0
-    },
-    {
-      "id": "13_Eoliennes",
-      "type": "circle",
-      "source": "13_Eoliennes",
-      "paint": {"circle-color": "rgba(179, 43, 43, 1)"},
+      "paint": {"line-color": "#1870d5", "line-width": 2, "line-opacity": 0.6},
       "opacity": 0
     },
     {
@@ -2276,7 +2289,22 @@
       "id": "voieferree",
       "type": "line",
       "source": "voieferree",
+      "layout": {"visibility": "visible"},
       "paint": {"line-width": 3, "line-color": "rgba(107, 95, 95, 1)"}
+    },
+    {
+      "id": "03_Holtzheim",
+      "type": "fill",
+      "source": "03_Holtzheim",
+      "paint": {"fill-color": "rgba(76, 123, 166, 1)", "fill-opacity": 0.2},
+      "opacity": 0
+    },
+    {
+      "id": "10_PointLecture",
+      "type": "circle",
+      "source": "10_PointLecture",
+      "paint": {"circle-color": "rgba(179, 43, 43, 1)"},
+      "opacity": 0
     },
     {
       "id": "bridge-motorway-link-casing",

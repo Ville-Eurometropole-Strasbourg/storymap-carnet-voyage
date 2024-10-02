@@ -153,7 +153,7 @@ config.chapters.forEach((record, idx) => {
   // Creates the title for the vignettes
   if (record.title) {
     var title = document.createElement('h3');
-    title.innerText = record.title;
+    title.innerHTML = record.title;
     chapter.appendChild(title);
   }
   // Creates the image for the vignette
@@ -204,9 +204,7 @@ var footer = document.createElement('div');
 // This assigns all the content to the footer element
 if (config.footer) {
   var footerText = document.createElement('p');
-  footerText.innerHTML = '<div>' + config.footer + '</div>' +
-    '<div class="ticket-button ticket"><span class="circle"></span><a>Ticket retour 1€</a></div>'
-    + '<br/><br/>' + config.footerAttribution;
+  footerText.innerHTML = config.footer + '<br/><br/>' + config.footerAttribution;
   footer.appendChild(footerText);
 }
 // If the footer element contains any content, add it to the story
@@ -232,8 +230,7 @@ var map = new maplibregl.Map({
 });
 
 map.addControl(new maplibregl.AttributionControl({
-  customAttribution: '🟪 Piste Cyclable ⬛ Voie ferrée <br/><br/>\
-  <a href="https://www.openstreetmap.org/">📦</a> <b>données</b> par <a href="https://www.openstreetmap.org/copyright">\
+  customAttribution: '<a href="https://www.openstreetmap.org/">📦</a> <b>données</b> par <a href="https://www.openstreetmap.org/copyright">\
   <b>©️ les contributeurs & contributrices OpenStreetMap</b></a><br/>\
   <a href="https://github.com/teritrio/teritorio-tourism-gl-style/blob/master/LICENSE.md">🗺️</a> \
   <b>fond de carte</b> par <a href="https://www.teritorio.fr">Teritorio</a> \
@@ -256,14 +253,31 @@ var scroller = scrollama();
 tutorial. At the end, however, we setup the functions that will tie the
 scrolling to the chapters and move the map from one location to another
 while changing the zoom level, pitch and bearing */
-
-map.on("load", function () {
+map.on('load', async () => {
 
   if (config.layers) {
     config.layers.forEach(lyr => {
       setLayerOpacity(lyr);
     });
   }
+
+  image = await map.loadImage('https://sig.strasbourg.eu/datastrasbourg/fig2024/images/wind_turbine_2076.png');
+  map.addImage('windturbine', image.data);
+  map.addSource('point', {
+    'type': 'geojson',
+    'data': 'https://sig.strasbourg.eu/datastrasbourg/fig2024/13_Eoliennes.geojson'
+  });
+
+  map.addLayer({
+    'id': 'points',
+    'type': 'symbol',
+    'source': 'point',
+    'layout': {
+      'icon-image': 'windturbine',
+      'icon-allow-overlap': true,
+      'icon-size': ['interpolate', ['linear'], ['zoom'], 10, 0.001, 14, 0.08, 15, 0.1, 18, 0.8, 20, 4, 22, 12]
+    }
+  });
 
   // Open the URL in a new tab when clicking on a feature
   map.on('click', 'office_tourisme', (e) => {
@@ -314,12 +328,24 @@ map.on("load", function () {
 adjust our scrolling setup */
 window.addEventListener('resize', scroller.resize);
 
+// Legend Menu
+let legendMenu = document.querySelector(".legend");
+let legendButton = document.querySelector(".legend__button");
+
+toggleLegendMenu = () => {
+  legendMenu.classList.toggle("open");
+}
+
+legendButton.addEventListener("click", function () {
+  toggleLegendMenu();
+});
+
 // Elevator script included on the page, already.
 window.onload = function () {
   var elevator = new Elevator({
     element: document.querySelector('.ticket-button'),
     duration: 60000, // milliseconds
     //mainAudio: '/fig2024/audio/audio.mp3',
-    //endAudio: '/fig2024/audio/end-audio.mp3'
+    endAudio: '/fig2024/sncf.mp3'
   });
 }
