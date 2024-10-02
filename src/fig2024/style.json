@@ -3477,6 +3477,12 @@
       }
     },
     {
+      "id": "office_tourisme",
+      "type": "symbol",
+      "source": "office_tourisme",
+      "layout": {"icon-image": "services-information⬤", "icon-size": 0.6}
+    },
+    {
       "id": "place-locality",
       "type": "symbol",
       "metadata": {"mapbox:group": "1444849242106.713"},
@@ -4312,12 +4318,6 @@
         "text-halo-width": 1,
         "text-opacity": 0.7
       }
-    },
-    {
-      "id": "office_tourisme",
-      "type": "symbol",
-      "source": "office_tourisme",
-      "layout": {"icon-image": "services-information⬤"}
     }
   ],
   "id": "7mjj2r2"
