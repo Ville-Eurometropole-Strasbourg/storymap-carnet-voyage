@@ -2294,9 +2294,9 @@
     },
     {
       "id": "03_Holtzheim",
-      "type": "line",
+      "type": "fill",
       "source": "03_Holtzheim",
-      "paint": {"line-color": "#1870d5", "line-width": 2, "line-opacity": 0.6},
+      "paint": {"fill-color": "rgba(76, 123, 166, 1)", "fill-opacity": 0.2},
       "opacity": 0
     },
     {
