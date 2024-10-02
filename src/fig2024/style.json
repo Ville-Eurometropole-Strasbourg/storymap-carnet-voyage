@@ -79,10 +79,6 @@
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/08_Locomotive.geojson"
     },
-    "13_Eoliennes": {
-      "type": "geojson",
-      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/13_Eoliennes.geojson"
-    },
     "16_Abbayes": {
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/16_Abbayes.geojson"

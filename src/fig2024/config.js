@@ -86,6 +86,10 @@ var config = {
             opacity: 0
         },
         {
+            layer: '03_Holtzheim',
+            opacity: 0
+        },
+        {
             layer: '04_Entzheim',
             opacity: 0
         },
@@ -190,8 +194,18 @@ var config = {
                 pitch: 40,
                 bearing: -7
             },
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+                {
+                    layer: '03_Holtzheim',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: '03_Holtzheim',
+                    opacity: 0
+                }
+            ]
         },
         {
             id: '4',
