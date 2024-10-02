@@ -2163,13 +2163,6 @@
       "opacity": 0
     },
     {
-      "id": "13_Eoliennes",
-      "type": "circle",
-      "source": "13_Eoliennes",
-      "paint": {"circle-color": "rgba(179, 43, 43, 1)"},
-      "opacity": 0
-    },
-    {
       "id": "railway-transit",
       "type": "line",
       "metadata": {"mapbox:group": "1444849345966.4436"},
