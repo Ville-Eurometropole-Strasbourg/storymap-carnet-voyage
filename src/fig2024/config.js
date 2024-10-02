@@ -185,7 +185,7 @@ var config = {
         },
         {
             id: '3',
-            title: 'La zone d’activité agricole d’Holtzheim : vers une agriculture biologique de proximité',
+            title: 'La zone d’activité agricole d’Holtzheim&nbsp;: vers une agriculture biologique de proximité',
             images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/03_Holtzheim.webp': { "alt": "Premier projet de maraîchage biologique à Holtzheim", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
             description: 'Le projet alimentaire territorial de la Ville et Eurométropole de Strasbourg, a pour objectif de développer une agriculture durable et une alimentation de qualité, accessible à tous. Parmi les actions en cours, les Zones d’Activité Agricole concrétisent une transition agricole et alimentaire du territoire, en ciblant quatre zones prioritaires : à la Robertsau, dans un secteur situé dans les communes de Souffelweyersheim, Hoenheim et Bischheim, à Illkirch-Graffenstaden, et dans le parc d’activité nord aéroport de Holtzheim. Ce dernier a récemment accueilli un premier projet de maraîchage biologique de 5 hectares, qui s’accompagne de la création d’emplois en insertion.<br/><br/><a href="https://odacit.3d.strasbourg.eu/?X=4194171.6068522343&Y=563395.9164172388&Z=4758276.67914898&heading=6.121067408178671&pitch=-0.8499760483855918&roll=6.28313314043598">Visualiser en 3D sur OD@CiT</a>',
             location: {
@@ -444,7 +444,7 @@ var config = {
         },
         {
             id: '15',
-            title: 'Projet alimentaire territorial et continuité écologique : une mise en valeur des paysages naturels et agricoles',
+            title: 'Projet alimentaire territorial et continuité écologique&nbsp;: une mise en valeur des paysages naturels et agricoles',
             images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/15_PAT.webp': { "alt": "Projet alimentaire territorial et continuité écologique", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
             description: 'La Communauté d’agglomération de Saint-Dié-des-Vosges met en place plusieurs actions visant à préserver et restaurer les milieux naturels et leur biodiversité, incluant l’élaboration d’un inventaire visant à faciliter des travaux de restauration des cours d’eau et zones humides ainsi que le rétablissement de la continuité écologique. Elle pilote également le dispositif Aggl’Eau d’Education à l’Environnement et au Développement Durable à destination des scolaires, et travaille, avec le Conseil Départemental de Meurthe-et-Moselle, sur la préservation de la valeur environnementale de l’Espace Naturel Sensible de la vallée de la Plaine. En outre, la CA gère trois Associations Foncières Pastorales, dont l’objectif est l’ouverture des paysages et le soutien de l’agriculture de montagne. Enfin, avec les deux autres intercommunalités qui forment le PETR du Pays de la Déodatie, elle participe au Projet alimentaire territorial « Cultivons notre alimentation de demain » visant à soutenir la structuration de la filière agricole.',
             location: {

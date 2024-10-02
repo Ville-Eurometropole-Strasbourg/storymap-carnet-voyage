@@ -154,7 +154,7 @@ config.chapters.forEach((record, idx) => {
   // Creates the title for the vignettes
   if (record.title) {
     var title = document.createElement('h3');
-    title.innerText = record.title;
+    title.innerHTML = record.title;
     chapter.appendChild(title);
   }
   // Creates the image for the vignette
