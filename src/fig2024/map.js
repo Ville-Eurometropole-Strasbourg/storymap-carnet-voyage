@@ -226,6 +226,7 @@ var map = new maplibregl.Map({
   pitch: config.chapters[0].location.pitch,
   scrollZoom: false,
   attributionControl: false,
+  crossSourceCollisions: false,
   //hash: "mapHash"
 });
 
