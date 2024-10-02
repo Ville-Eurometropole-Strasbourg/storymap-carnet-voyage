@@ -255,7 +255,7 @@ var scroller = scrollama();
 tutorial. At the end, however, we setup the functions that will tie the
 scrolling to the chapters and move the map from one location to another
 while changing the zoom level, pitch and bearing */
-map.on('load', async () => {
+map.on('style.load', async () => {
 
   if (config.layers) {
     config.layers.forEach(lyr => {
