@@ -102,6 +102,10 @@
     "03_Holtzheim": {
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/03_Holtzheim.geojson"
+    },
+    "10_PointLecture": {
+      "type": "geojson",
+      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/10_PointLecture.geojson"
     }
   },
   "sprite": "https://vecto.teritorio.xyz/styles/teritorio-tourism-latest/sprite",
@@ -2293,6 +2297,13 @@
       "type": "fill",
       "source": "03_Holtzheim",
       "paint": {"fill-color": "rgba(76, 123, 166, 1)", "fill-opacity": 0.2},
+      "opacity": 0
+    },
+    {
+      "id": "10_PointLecture",
+      "type": "circle",
+      "source": "10_PointLecture",
+      "paint": {"circle-color": "rgba(179, 43, 43, 1)"},
       "opacity": 0
     },
     {
