@@ -106,6 +106,10 @@ var config = {
             opacity: 0
         },
         {
+            layer: '10_PointLecture',
+            opacity: 0
+        },
+        {
             layer: '18_PVD',
             opacity: 0
         },
@@ -373,13 +377,23 @@ var config = {
             },
             description: 'Le Plan de paysage déployé par la Communauté de communes de la Vallée de la Bruche depuis les années 1990 a participé à mettre en valeur les ressources naturelles, les activités économiques et les modes de vie de ce territoire. Afin de valoriser les actions engagées et d’ouvrir le dialogue entre les acteurs politiques et économiques et les habitants, plusieurs points de lecture du paysage ont été aménagés depuis 2008 à Barembach, La Broque, Colroy La Roche, Ranrupt, Saint Blaise La Roche, Saulxures ou encore Saâles. Touristes, randonneurs et habitants sont ainsi invités à découvrir certains villages, panoramas, vignes, espaces agricoles et forêts, et à comprendre les enjeux qui les traversent grâce aux passerelles, silhouettes, longues vues et maquettes mis à disposition.<br/><br/>Site internet : <a href="https://www.rando-bruche.fr/">https://www.rando-bruche.fr/</a>',
             location: {
-                center: [7.202478, 48.3700801],
-                zoom: 15,
-                pitch: 45,
-                bearing: 20
+                center: [7.17952, 48.38729],
+                zoom: 13,
+                pitch: 33,
+                bearing: -27.3
             },
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+                {
+                    layer: '10_PointLecture',
+                    opacity: 1
+                },
+            ],
+            onChapterExit: [
+                {
+                    layer: '10_PointLecture',
+                    opacity: 0
+                },
+            ]
         },
         {
             id: '11',
