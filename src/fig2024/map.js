@@ -158,20 +158,34 @@ config.chapters.forEach((record, idx) => {
   }
   // Creates the image for the vignette
   if (record.images) {
+    firstImageParams = Object.values(record.images)[0]
+    record_alt = firstImageParams.alt;
+    var imageDiv = document.createElement('div');
+    imageDiv.classList.add("imageDiv");
     var image = new Image();
     image.src = Object.keys(record.images)[0];
-    image.alt = `Illustration : ${Object.values(record.images)[0].alt}`;
+    image.alt = `Illustration : ${record_alt}`;
+    if ("width" in firstImageParams) {
+      image.style.width = firstImageParams.width;
+    };
     image.setAttribute(
       "onclick",
       `openLightbox('${encodeURIComponent(JSON.stringify(record.images))}');currentSlide(1)`
     );
     image.classList.add("hover-shadow");
     image.classList.add("cursor");
-    chapter.appendChild(image);
+    var handClickIcon = new Image();
+    handClickIcon.src = "./hand_click.svg"
+    handClickIcon.classList.add("handclick");
+    imageDiv.appendChild(image);
+    if (Object.keys(record.images).length > 1) {
+      imageDiv.appendChild(handClickIcon);
+    };
+    chapter.appendChild(imageDiv);
     // Creates the image credit for the vignette
     var imageCredit = document.createElement('p');
     imageCredit.classList.add('imageCredit');
-    imageCredit.innerHTML = 'Crédit: ' + Object.values(record.images)[0].credit;
+    imageCredit.innerHTML = `${record_alt} | Crédit: ${firstImageParams.credit}`;
     chapter.appendChild(imageCredit);
   }
   // Creates the description for the vignette
