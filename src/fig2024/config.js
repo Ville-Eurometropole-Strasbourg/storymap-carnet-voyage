@@ -141,10 +141,10 @@ var config = {
             <p>Depuis le début des années 1990, la Communauté de communes de la Vallée de la Bruche s’est dotée d’un Plan de paysage. Au cours des 30 dernières années, celui-ci a permis de mettre en place diverses politiques portant sur la réouverture des fonds de vallée, la création d’associations foncières pastorales, les réseaux de trame verte et bleue, la préservation de la biodiversité des prairies, la valorisation de la filière bois ou encore des démarches de sensibilisation pour le grand public et la réhabilitation de friches… En reconnaissance de cette politique volontariste et de ses effets tangibles sur le territoire, la vallée de la Bruche a été désignée « Capitale Française de la Biodiversité 2022 – Paysages et Biodiversité », une distinction décernée par l’Office Français de la Biodiversité.\
             </p></details>',
             location: {
-                center: [7.746, 48.4389],
-                zoom: 9,
-                pitch: 31,
-                bearing: 180
+                center: [6.9832, 48.4046],
+                zoom: 9.5,
+                pitch: 20,
+                bearing: 0
             },
             onChapterEnter: [],
             onChapterExit: []
@@ -193,7 +193,7 @@ var config = {
             images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/03_Holtzheim.webp': { "alt": "Premier projet de maraîchage biologique à Holtzheim", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
             description: 'Le projet alimentaire territorial de la Ville et Eurométropole de Strasbourg, a pour objectif de développer une agriculture durable et une alimentation de qualité, accessible à tous. Parmi les actions en cours, les Zones d’Activité Agricole concrétisent une transition agricole et alimentaire du territoire, en ciblant quatre zones prioritaires : à la Robertsau, dans un secteur situé dans les communes de Souffelweyersheim, Hoenheim et Bischheim, à Illkirch-Graffenstaden, et dans le parc d’activité nord aéroport de Holtzheim. Ce dernier a récemment accueilli un premier projet de maraîchage biologique de 5 hectares, qui s’accompagne de la création d’emplois en insertion.<br/><br/><a href="https://odacit.3d.strasbourg.eu/?X=4194171.6068522343&Y=563395.9164172388&Z=4758276.67914898&heading=6.121067408178671&pitch=-0.8499760483855918&roll=6.28313314043598">Visualiser en 3D sur OD@CiT</a>',
             location: {
-                center: [7.641234, 48.553143],
+                center: [7.637, 48.55217],
                 zoom: 15,
                 pitch: 40,
                 bearing: -7
@@ -240,7 +240,7 @@ var config = {
             title: 'Les paysages forestiers, un atout économique pour la filière bois',
             images: {
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets.webp': { "alt": "Les paysages forestiers, un atout économique pour la filière bois", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' },
-                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/_8PB2636.webp': { "mini": "https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/mini__8PB2636.webp", "alt": "Groupe SIAT, industrie spécialisée dans la transformation du bois", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
+                'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/_8PB2636.webp': { "mini": "https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/mini__8PB2636.webp", "alt": "Le Groupe SIAT, une entreprise de la filière bois", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/_8PB2694.webp': { "mini": "https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/mini__8PB2694.webp", "alt": "Paysage forestier", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/_8PB5921.webp': { "mini": "https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/mini__8PB5921.webp", "alt": "Bûcheron coupant un arbre", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
                 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/_8PB6134.webp': { "mini": "https://sig.strasbourg.eu/datastrasbourg/fig2024/images/05_Forets/mini__8PB6134.webp", "alt": "Bûcheron à l’œuvre", "credit": '<a href="https://cc.valleedelabruche.fr/">CC Vallée de la Bruche</a>' },
@@ -431,7 +431,7 @@ var config = {
         {
             id: '13',
             title: 'Des plans climat',
-            images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/13_Eoliennes.webp': { "alt": "Les parcs éoliens au sein du paysage vosgien", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
+            images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/13_Eoliennes.webp': { "alt": "Les parcs éoliens au sein du paysage vosgien", "credit": '<a href="https://www.adeus.org/">ADEUS</a>', "width": "75%" } },
             description: 'Les parcs éoliens qui composent le paysage vosgien témoignent de l’engagement des collectivités du territoire dans le domaine de la transition énergétique. Depuis les années 1990, la Communauté de communes de la Vallée de la Bruche s’engage ainsi dans une démarche paysagère prônant notamment la préservation de la forêt et la valorisation du bois-énergie. Adopté en 2022 par le PETR Bruche Mossig, le Plan climat s’appuie également sur le développement de nouvelles sources d’énergie verte, telles que le photovoltaïque ou le biogaz. Depuis 2015, la Communauté d’agglomération de Saint-Dié-des-Vosges dispose, avec les autres intercommunalités du PETR de la Déodatie, d’une Maison de l’Habitat et de l’Energie, qui vise à accompagner les particuliers, les entreprises, les hébergeurs et les collectivités dans les projets de rénovation énergétique et d’amélioration du bâti. En 2023, la Communauté d’agglomération a également amorcé une démarche d’élaboration d’un Plan climat pour 2026-2031.',
             location: {
                 center: [7.055473, 48.357571],
