@@ -96,7 +96,7 @@
 }
 
 .legend-train div::before {
-    background: black;
+    background: rgba(107, 95, 95, 1);
 }
 
 .legend-bike div::before {

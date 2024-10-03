@@ -93,9 +93,23 @@ body {
   max-width: 50vw;
 }
 
+#features .imageDiv {
+  position: relative;
+  padding: 0 0;
+}
+
+#features .handclick {
+  position: absolute;
+  bottom: -5px;
+  right: -18px;
+  width: 25px;
+  opacity: 75%;
+}
+
 #features .imageCredit {
   font-size: 0.9em;
-  margin-top: -5px;
+  margin-top: -3px;
+  line-height: normal;
 }
 
 /* Remove the default triangle */
@@ -113,7 +127,7 @@ body {
   transition: 0.2s;
 }
 
-#features details[open] > summary::after {
+#features details[open]>summary::after {
   transform: rotate(90deg);
 }
 
@@ -166,6 +180,8 @@ a:visited {
 }
 
 .step div {
+  display: inline-block;
+  text-align: center;
   padding: 25px 50px;
   line-height: 25px;
   font-size: 13px;
@@ -174,6 +190,7 @@ a:visited {
 .step img {
   width: 100%;
 }
+
 /* flèche animée invitant à défiler vers le bas */
 .arrow-down {
   width: 60px;
@@ -225,24 +242,31 @@ a:visited {
     transform: rotate(-45deg);
   }
 }
+
 /* --- */
 /* pointe de la boussole colorée */
 .maplibregl-ctrl button.maplibregl-ctrl-compass .maplibregl-ctrl-icon {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='29' fill='%23ec1d25' viewBox='0 0 29 29'%3E%3Cpath d='m10.5 14 4-8 4 8h-8z'/%3E%3Cpath fill='%23ccc' d='m10.5 16 4 8 4-8h-8z'/%3E%3C/svg%3E");
 }
+
 /* --- */
 
 .logo-container {
   display: flex;
-  justify-content: center;   /* Align logos horizontally in the center */
-  align-items: center;       /* Align logos vertically in the center */
-  gap: 10px;                 /* Add space between logos */
-  flex-wrap: nowrap;         /* Ensure logos stay on one line */
+  justify-content: center;
+  /* Align logos horizontally in the center */
+  align-items: center;
+  /* Align logos vertically in the center */
+  gap: 10px;
+  /* Add space between logos */
+  flex-wrap: nowrap;
+  /* Ensure logos stay on one line */
 }
 
 .logo-container img {
   display: inline-block;
-  width: auto;               /* Keep aspect ratio */
-  vertical-align: middle;     /* Align logos vertically */
+  width: auto;
+  /* Keep aspect ratio */
+  vertical-align: middle;
+  /* Align logos vertically */
 }
-
