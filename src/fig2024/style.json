@@ -2280,9 +2280,9 @@
       "type": "line",
       "source": "voieferree",
       "paint": {
-        "line-color": "rgba(0, 0, 0, 1)",
-        "line-dasharray": [0.2, 8],
-        "line-width": {"base": 1.4, "stops": [[14.5, 0], [15, 3], [20, 8]]}
+        "line-color": "rgba(107, 95, 95, 1)",
+        "line-dasharray": [0.2, 3],
+        "line-width": {"base": 1.4, "stops": [[14.5, 0], [15, 12], [20, 20]]}
       }
     },
     {
@@ -2290,7 +2290,10 @@
       "type": "line",
       "source": "voieferree",
       "layout": {"visibility": "visible"},
-      "paint": {"line-width": 3, "line-color": "rgba(107, 95, 95, 1)"}
+      "paint": {
+        "line-width": {"stops": [[8, 2], [12, 4], [15, 8], [18, 10]]},
+        "line-color": "rgba(107, 95, 95, 1)"
+      }
     },
     {
       "id": "03_Holtzheim",
