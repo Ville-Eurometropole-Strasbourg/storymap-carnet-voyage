@@ -29,7 +29,11 @@ function openLightbox(imgParams) {
         // thumbnails
         var divThumbnail = document.createElement("div");
         var thumbnail = document.createElement("img");
-        thumbnail.src = key;
+        if ("mini" in values) {
+            thumbnail.src = values.mini;
+        } else {
+            thumbnail.src = key;
+        };
         thumbnail.alt = values.alt;
         thumbnail.credit = values.credit;
         thumbnail.classList.add("gallery");
