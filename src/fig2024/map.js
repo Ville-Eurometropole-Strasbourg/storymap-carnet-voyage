@@ -294,6 +294,23 @@ map.on('style.load', async () => {
     }
   });
 
+  map.addSource('03_Holtzheim', {
+    'type': 'image',
+    'url': 'https://sig.strasbourg.eu/datastrasbourg/fig2024/03_Holtzheim.png',
+    "coordinates": [
+      [7.634197166, 48.552052903],  // top left
+      [7.637996566, 48.552052903],  // top right
+      [7.637996566, 48.548510533],  // bottom right
+      [7.634197166, 48.548510533]   // bottom left
+    ]
+  });
+
+  map.addLayer({
+    'id': '03_Holtzheim',
+    'source': '03_Holtzheim',
+    'type': 'raster'
+  });
+
   // Open the URL in a new tab when clicking on a feature
   map.on('click', 'office_tourisme', (e) => {
     const url = e.features[0].properties.website;

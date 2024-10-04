@@ -86,10 +86,6 @@ var config = {
             opacity: 0
         },
         {
-            layer: '03_Holtzheim',
-            opacity: 0
-        },
-        {
             layer: '04_Entzheim',
             opacity: 0
         },
@@ -193,23 +189,13 @@ var config = {
             images: { 'https://sig.strasbourg.eu/datastrasbourg/fig2024/images/03_Holtzheim.webp': { "alt": "Premier projet de maraîchage biologique à Holtzheim", "credit": '<a href="https://www.adeus.org/">ADEUS</a>' } },
             description: 'Le projet alimentaire territorial de la Ville et Eurométropole de Strasbourg, a pour objectif de développer une agriculture durable et une alimentation de qualité, accessible à tous. Parmi les actions en cours, les Zones d’Activité Agricole concrétisent une transition agricole et alimentaire du territoire, en ciblant quatre zones prioritaires : à la Robertsau, dans un secteur situé dans les communes de Souffelweyersheim, Hoenheim et Bischheim, à Illkirch-Graffenstaden, et dans le parc d’activité nord aéroport de Holtzheim. Ce dernier a récemment accueilli un premier projet de maraîchage biologique de 5 hectares, qui s’accompagne de la création d’emplois en insertion.<br/><br/><a href="https://odacit.3d.strasbourg.eu/?X=4194171.6068522343&Y=563395.9164172388&Z=4758276.67914898&heading=6.121067408178671&pitch=-0.8499760483855918&roll=6.28313314043598">Visualiser en 3D sur OD@CiT</a>',
             location: {
-                center: [7.637, 48.55217],
-                zoom: 15,
-                pitch: 40,
-                bearing: -7
+                center: [7.636484, 48.549839],
+                zoom: 16,
+                pitch: 0,
+                bearing: 17
             },
-            onChapterEnter: [
-                {
-                    layer: '03_Holtzheim',
-                    opacity: 1
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: '03_Holtzheim',
-                    opacity: 0
-                }
-            ]
+            onChapterEnter: [],
+            onChapterExit: []
         },
         {
             id: '4',
