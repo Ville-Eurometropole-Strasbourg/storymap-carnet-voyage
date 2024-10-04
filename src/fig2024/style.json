@@ -710,126 +710,6 @@
       }
     },
     {
-      "id": "01_Fischer",
-      "type": "fill-extrusion",
-      "source": "01_Fischer",
-      "minzoom": 14,
-      "paint": {
-        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
-        "fill-extrusion-height": 10,
-        "fill-extrusion-base": 0,
-        "fill-extrusion-opacity": 0.8
-      }
-    },
-    {
-      "id": "02_Nextmed",
-      "type": "fill-extrusion",
-      "source": "02_Nextmed",
-      "minzoom": 14,
-      "paint": {
-        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
-        "fill-extrusion-height": 10,
-        "fill-extrusion-base": 0,
-        "fill-extrusion-opacity": 0.8
-      }
-    },
-    {
-      "id": "04_Entzheim",
-      "type": "fill-extrusion",
-      "source": "04_Entzheim",
-      "minzoom": 14,
-      "paint": {
-        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
-        "fill-extrusion-height": 10,
-        "fill-extrusion-base": 0,
-        "fill-extrusion-opacity": 0.8
-      }
-    },
-    {
-      "id": "05_Forets",
-      "type": "fill-extrusion",
-      "source": "05_Forets",
-      "minzoom": 14,
-      "paint": {
-        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
-        "fill-extrusion-height": 10,
-        "fill-extrusion-base": 0,
-        "fill-extrusion-opacity": 0.8
-      }
-    },
-    {
-      "id": "06_Scheidecker",
-      "type": "fill-extrusion",
-      "source": "06_Scheidecker",
-      "minzoom": 14,
-      "paint": {
-        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
-        "fill-extrusion-height": 10,
-        "fill-extrusion-base": 0,
-        "fill-extrusion-opacity": 0.8
-      }
-    },
-    {
-      "id": "06_Scheidecker_cheminee",
-      "type": "fill-extrusion",
-      "source": "06_Scheidecker_cheminee",
-      "minzoom": 14,
-      "paint": {
-        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
-        "fill-extrusion-height": 50,
-        "fill-extrusion-base": 0,
-        "fill-extrusion-opacity": 0.8
-      }
-    },
-    {
-      "id": "08_Locomotive",
-      "type": "fill-extrusion",
-      "source": "08_Locomotive",
-      "minzoom": 14,
-      "paint": {
-        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
-        "fill-extrusion-height": 10,
-        "fill-extrusion-base": 0,
-        "fill-extrusion-opacity": 0.8
-      }
-    },
-    {
-      "id": "16_Abbayes",
-      "type": "fill-extrusion",
-      "source": "16_Abbayes",
-      "minzoom": 14,
-      "paint": {
-        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
-        "fill-extrusion-height": 10,
-        "fill-extrusion-base": 0,
-        "fill-extrusion-opacity": 0.8
-      }
-    },
-    {
-      "id": "17_Anoud",
-      "type": "fill-extrusion",
-      "source": "17_Anoud",
-      "minzoom": 14,
-      "paint": {
-        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
-        "fill-extrusion-height": 10,
-        "fill-extrusion-base": 0,
-        "fill-extrusion-opacity": 0.8
-      }
-    },
-    {
-      "id": "19_Gare",
-      "type": "fill-extrusion",
-      "source": "19_Gare",
-      "minzoom": 14,
-      "paint": {
-        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
-        "fill-extrusion-height": 10,
-        "fill-extrusion-base": 0,
-        "fill-extrusion-opacity": 0.8
-      }
-    },
-    {
       "id": "tunnel-track-casing",
       "type": "line",
       "metadata": {"mapbox:group": "1444849354174.1904"},
@@ -3477,6 +3357,126 @@
           "type": "identity"
         },
         "fill-extrusion-opacity": 0.6
+      }
+    },
+    {
+      "id": "01_Fischer",
+      "type": "fill-extrusion",
+      "source": "01_Fischer",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "02_Nextmed",
+      "type": "fill-extrusion",
+      "source": "02_Nextmed",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "04_Entzheim",
+      "type": "fill-extrusion",
+      "source": "04_Entzheim",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "05_Forets",
+      "type": "fill-extrusion",
+      "source": "05_Forets",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "06_Scheidecker",
+      "type": "fill-extrusion",
+      "source": "06_Scheidecker",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "06_Scheidecker_cheminee",
+      "type": "fill-extrusion",
+      "source": "06_Scheidecker_cheminee",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 50,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "08_Locomotive",
+      "type": "fill-extrusion",
+      "source": "08_Locomotive",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "16_Abbayes",
+      "type": "fill-extrusion",
+      "source": "16_Abbayes",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "17_Anoud",
+      "type": "fill-extrusion",
+      "source": "17_Anoud",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
+      }
+    },
+    {
+      "id": "19_Gare",
+      "type": "fill-extrusion",
+      "source": "19_Gare",
+      "minzoom": 14,
+      "paint": {
+        "fill-extrusion-color": "rgba(193, 188, 181, 1)",
+        "fill-extrusion-height": 10,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 0.8
       }
     },
     {
