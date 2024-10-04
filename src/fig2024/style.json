@@ -99,10 +99,6 @@
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/office_tourisme.geojson"
     },
-    "03_Holtzheim": {
-      "type": "geojson",
-      "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/03_Holtzheim.geojson"
-    },
     "10_PointLecture": {
       "type": "geojson",
       "data": "https://sig.strasbourg.eu/datastrasbourg/fig2024/10_PointLecture.geojson"
@@ -2174,13 +2170,6 @@
         "line-width": {"stops": [[8, 2], [12, 4], [15, 8], [18, 10]]},
         "line-color": "rgba(107, 95, 95, 1)"
       }
-    },
-    {
-      "id": "03_Holtzheim",
-      "type": "fill",
-      "source": "03_Holtzheim",
-      "paint": {"fill-color": "rgba(76, 123, 166, 1)", "fill-opacity": 0.2},
-      "opacity": 0
     },
     {
       "id": "10_PointLecture",
