@@ -166,7 +166,7 @@ config.chapters.forEach((record, idx) => {
     image.src = Object.keys(record.images)[0];
     image.alt = `Illustration : ${record_alt}`;
     if ("width" in firstImageParams) {
-      image.style.width = firstImageParams.width;
+      imageDiv.style.width = firstImageParams.width;
     };
     image.setAttribute(
       "onclick",
